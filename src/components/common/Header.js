@@ -1,10 +1,57 @@
-import React from 'react';
+import { NavLink } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
-function Header() {
+function Header(props) {
+	const active = { color: 'aqua' };
+
 	return (
-		<div>
-			<h1>Header</h1>
-		</div>
+		<header className={props.type}>
+			<div className='inner'>
+				<h1>
+					<NavLink activeStyle={active} exact to='/'>
+						LOGO
+					</NavLink>
+				</h1>
+
+				<ul id='gnb'>
+					<li>
+						<NavLink activeStyle={active} to='/'>
+							Department
+						</NavLink>
+					</li>
+					<li>
+						<NavLink activeStyle={active} to='/'>
+							Gallery
+						</NavLink>
+					</li>
+					<li>
+						<NavLink activeStyle={active} to='/'>
+							Youtube
+						</NavLink>
+					</li>
+					<li>
+						<NavLink activeStyle={active} to='/'>
+							Community
+						</NavLink>
+					</li>
+					<li>
+						<NavLink activeStyle={active} to='/'>
+							Location
+						</NavLink>
+					</li>
+					<li>
+						<NavLink activeStyle={active} to='/'>
+							Join
+						</NavLink>
+					</li>
+				</ul>
+
+				<a href='#' className='menuMo'>
+					<FontAwesomeIcon icon={faBars} />
+				</a>
+			</div>
+		</header>
 	);
 }
 
