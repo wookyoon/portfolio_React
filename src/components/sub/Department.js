@@ -1,5 +1,6 @@
 import Layout from '../common/Layout';
 import { useEffect, useState } from 'react';
+const path = process.env.PUBLIC_URL;
 
 function Department() {
 	useEffect(() => {

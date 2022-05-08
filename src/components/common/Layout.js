@@ -1,7 +1,10 @@
 import { useEffect, useRef } from 'react';
 
+const path = process.env.PUBLIC_URL;
+
 function Layout(props) {
 	const frame = useRef(null);
+	console.log(props.bg);
 
 	useEffect(() => {
 		frame.current.classList.remove('on');
@@ -9,7 +12,8 @@ function Layout(props) {
 	}, []);
 
 	return (
-		<section className={`content${props.name}`} ref={frame}>
+		<section className={`content ${props.name}`} ref={frame}>
+			<figure style={{ backgroundImage: `url(${props.bg})` }}></figure>
 			<figure></figure>
 			<div className='inner'>
 				<h1>{props.name}</h1>
