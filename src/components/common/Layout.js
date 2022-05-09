@@ -4,7 +4,7 @@ const path = process.env.PUBLIC_URL;
 
 function Layout(props) {
 	const frame = useRef(null);
-	console.log(props.bg);
+	// console.log(props.bg);
 
 	useEffect(() => {
 		frame.current.classList.remove('on');
@@ -13,12 +13,17 @@ function Layout(props) {
 
 	return (
 		<section className={`content ${props.name}`} ref={frame}>
-			<figure style={{ backgroundImage: `url(${props.bg})` }}></figure>
-			<figure></figure>
-			<div className='inner'>
-				<h1>{props.name}</h1>
-				{props.children}
-			</div>
+			{/* <figure style={{ backgroundImage: `url(${props.bg})` }}></figure> */}
+			<figure>
+				<div id='subTitle'>
+					<h1>{props.name}</h1>
+					<p>
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+						Accusantium, aliquid.
+					</p>
+				</div>
+			</figure>
+			<div className='inner'>{props.children}</div>
 		</section>
 	);
 }

@@ -1,10 +1,11 @@
 import React from 'react';
+const path = process.env.PUBLIC_URL;
 
 function Content() {
 	return (
-		<div>
-			<h1>Content</h1>
-		</div>
+		<section id='sec_1'>
+			<div></div>
+		</section>
 	);
 }
 

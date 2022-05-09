@@ -1,6 +1,6 @@
 header {
 	width: 100%;
-	background: #222;
+	background: rgba(245, 245, 220, 0.5);
 
 	.inner {
 		width: 1180px;
@@ -14,8 +14,8 @@ header {
 			left: 0px;
 
 			a {
-				font: bold 24px/1 'arial';
-				color: #fff;
+				font: bold 35px/1 'Libre Bodoni';
+				color: #111;
 			}
 		}
 
@@ -30,8 +30,8 @@ header {
 				a {
 					display: inline-block;
 					padding: 22px 30px;
-					font: bold 14px/1 'arial';
-					color: #fff;
+					font: 18px/1 'Orelega One';
+					color: #111;
 				}
 			}
 		}
@@ -40,7 +40,7 @@ header {
 			right: 30px;
 			bottom: 20px;
 			font-size: 24px;
-			color: #fff;
+			color: #111;
 			display: none;
 		}
 	}

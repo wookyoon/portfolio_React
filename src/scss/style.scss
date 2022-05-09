@@ -5,7 +5,7 @@ $mp: 639px;
 @import 'common/header';
 @import 'common/footer';
 @import 'common/layout';
-// @import 'common/popup';
+@import 'common/popup';
 
 @import 'main/visual';
 @import 'main/content';
@@ -16,3 +16,5 @@ $mp: 639px;
 @import 'sub/youtube';
 @import 'sub/location';
 @import 'sub/join';
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Libre+Bodoni:wght@600&family=Orelega+One&family=Oswald:wght@300&display=swap');

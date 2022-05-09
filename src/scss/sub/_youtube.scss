@@ -1,0 +1,18 @@
+.Youtube {
+	figure {
+		background-image: url(/img/department4.jpg);
+		background-size: cover;
+		background-position: center;
+	}
+	.inner {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		article {
+			width: 350px;
+			img {
+				width: 350px;
+			}
+		}
+	}
+}
