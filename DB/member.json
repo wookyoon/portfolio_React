@@ -1,0 +1,34 @@
+{
+  "members": [
+    {
+      "name": "Eduard ",
+      "position": "CEO",
+      "pic": "member1.jpg"
+    },
+    {
+      "name": "Marin",
+      "position": "Project Manager",
+      "pic": "member2.jpg"
+    },
+    {
+      "name": "Foster",
+      "position": "Creative Director",
+      "pic": "member4.jpg"
+    },
+    {
+      "name": "Jake",
+      "position": "COO",
+      "pic": "member3.jpg"
+    },
+    {
+      "name": "Chapman",
+      "position": "Head Barista",
+      "pic": "member5.jpg"
+    },
+    {
+      "name": "ALICIA",
+      "position": "Staff Manager",
+      "pic": "member6.jpg"
+    }
+  ]
+}

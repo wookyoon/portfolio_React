@@ -1,9 +1,8 @@
 {
   "files": {
-    "main.css": "/react_portfolio_WK/static/css/main.cf2e42bf.css",
-    "main.js": "/react_portfolio_WK/static/js/main.8f0bc0a1.js",
+    "main.css": "/react_portfolio_WK/static/css/main.d8c22fc9.css",
+    "main.js": "/react_portfolio_WK/static/js/main.80b28a1f.js",
     "static/media/department4.jpg": "/react_portfolio_WK/static/media/department4.6acb63bab80c2d69e38f.jpg",
-    "static/media/main1.jpg": "/react_portfolio_WK/static/media/main1.bee4534d79dbfb5f0392.jpg",
     "static/media/department6.jpg": "/react_portfolio_WK/static/media/department6.eaf1e65ac8a873461252.jpg",
     "static/media/main2.jpg": "/react_portfolio_WK/static/media/main2.d72bca52500a0b13b5ef.jpg",
     "static/media/gallery1.jpg": "/react_portfolio_WK/static/media/gallery1.00af2cf62eed3c1e5505.jpg",
@@ -11,11 +10,11 @@
     "static/media/youtube1.jpg": "/react_portfolio_WK/static/media/youtube1.25fc21656ba59d5dee4c.jpg",
     "static/media/join1.jpg": "/react_portfolio_WK/static/media/join1.3f7c7c4f74d40dd39210.jpg",
     "index.html": "/react_portfolio_WK/index.html",
-    "main.cf2e42bf.css.map": "/react_portfolio_WK/static/css/main.cf2e42bf.css.map",
-    "main.8f0bc0a1.js.map": "/react_portfolio_WK/static/js/main.8f0bc0a1.js.map"
+    "main.d8c22fc9.css.map": "/react_portfolio_WK/static/css/main.d8c22fc9.css.map",
+    "main.80b28a1f.js.map": "/react_portfolio_WK/static/js/main.80b28a1f.js.map"
   },
   "entrypoints": [
-    "static/css/main.cf2e42bf.css",
-    "static/js/main.8f0bc0a1.js"
+    "static/css/main.d8c22fc9.css",
+    "static/js/main.80b28a1f.js"
   ]
 }
