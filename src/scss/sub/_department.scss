@@ -34,13 +34,13 @@
 				padding: 10px;
 				text-align: center;
 				div {
-					overflow: hidden;
 					img {
 						width: 300px;
 						height: 600px;
 						object-fit: cover;
 						filter: grayscale(1);
 						transform: scale(0.9);
+						cursor: pointer;
 					}
 					:hover {
 						filter: grayscale(0.5);
@@ -99,7 +99,7 @@
 			button {
 				width: 450px;
 				height: 50px;
-				background-color: rgba(0, 128, 0, 0.4);
+				background-color: rgba(0, 128, 0, 0.6);
 				border: none;
 				font: bold 20px/1 'lato';
 

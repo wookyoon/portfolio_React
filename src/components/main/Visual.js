@@ -8,7 +8,9 @@ function Visual() {
 			<div className='wrap'>
 				<h1>Organic Tea Shop</h1>
 				<h2>TEA FOR TWO</h2>
-				<a href='#'>THE SHOP</a>
+				<div>
+					<a href='#'>THE SHOP</a>
+				</div>
 			</div>
 		</figure>
 	);

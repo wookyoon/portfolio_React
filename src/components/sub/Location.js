@@ -10,24 +10,24 @@ function Location() {
 	const info = [
 		{
 			title: '여의도 본점',
-			latlng: new kakao.maps.LatLng(37.518250935810514, 126.93070443288991),
+			latlng: new kakao.maps.LatLng(37.51899420651927, 126.93060759503608),
 			imgSrc: `${path}/img/marker1.png`,
-			imgSize: new kakao.maps.Size(99, 80),
-			imgPos: { offset: new kakao.maps.Point(116, 99) },
+			imgSize: new kakao.maps.Size(60, 50),
+			imgPos: { offset: new kakao.maps.Point(50, 60) },
 		},
 		{
-			title: '상수동 창고',
+			title: '상수동 2호점',
 			latlng: new kakao.maps.LatLng(37.54879459319977, 126.91637232925349),
 			imgSrc: `${path}/img/marker2.png`,
-			imgSize: new kakao.maps.Size(99, 80),
-			imgPos: { offset: new kakao.maps.Point(116, 99) },
+			imgSize: new kakao.maps.Size(60, 50),
+			imgPos: { offset: new kakao.maps.Point(50, 60) },
 		},
 		{
-			title: '이태원 프리덤',
-			latlng: new kakao.maps.LatLng(37.534399064279796, 126.99432029447635),
+			title: '이태원 1호점',
+			latlng: new kakao.maps.LatLng(37.535029701736484, 126.99313225043191),
 			imgSrc: `${path}/img/marker3.png`,
-			imgSize: new kakao.maps.Size(99, 80),
-			imgPos: { offset: new kakao.maps.Point(116, 99) },
+			imgSize: new kakao.maps.Size(60, 50),
+			imgPos: { offset: new kakao.maps.Point(50, 60) },
 		},
 	];
 
@@ -131,7 +131,7 @@ function Location() {
 			</div>
 			<div id='map' ref={container}></div>
 
-			<button onClick={() => setTraffic(!traffic)}>
+			<button id='traffic' onClick={() => setTraffic(!traffic)}>
 				{traffic ? 'Traffic OFF' : 'Traffic ON'}
 			</button>
 

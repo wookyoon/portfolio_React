@@ -1,0 +1,37 @@
+#news {
+	width: 100%;
+	height: 100vh;
+	padding: 5vw;
+	margin-top: 20px;
+	text-align: center;
+	h1 {
+		font: 45px/1 'oswald';
+		color: #000;
+		letter-spacing: 4px;
+		margin-bottom: 80px;
+	}
+	div {
+		li {
+			background: #666;
+			height: 160px;
+			margin-bottom: 30px;
+			padding: 30px;
+			cursor: pointer;
+
+			h2 {
+				font: 40px/1 'Orelega One';
+				letter-spacing: 2px;
+				color: #fff;
+				margin-bottom: 15px;
+			}
+			p {
+				font: 35px/1 'oswald';
+				letter-spacing: 3px;
+				color: orange;
+			}
+		}
+		:hover {
+			background-color: #000;
+		}
+	}
+}

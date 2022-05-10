@@ -27,10 +27,19 @@ function Youtube() {
 	return (
 		<>
 			<Layout name={'Youtube'}>
+				<div className='title'>
+					<h1>THE BEST TEA-SHOP</h1>
+					<p>
+						Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+						accusantium
+						<br />
+						doloremque laudantium, totam rem aperiam, eaque ipsa quae.
+					</p>
+				</div>
 				{vids.map((vid, idx) => {
 					const tit = vid.snippet.title;
 					const desc = vid.snippet.description;
-					const date = vid.snippet.publishedAt;
+					// const date = vid.snippet.publishedAt;
 
 					return (
 						<>
@@ -38,9 +47,9 @@ function Youtube() {
 								<div className='pic'>
 									<img src={vid.snippet.thumbnails.standard.url} />
 								</div>
-								<h2>{tit.length > 50 ? tit.substr(0, 50) + '...' : tit}</h2>
+								<h2>{tit.length > 44 ? tit.substr(0, 44) + '...' : tit}</h2>
 								<p>{desc.length > 150 ? desc.substr(0, 150) + '...' : desc}</p>
-								<span>{date.split('T')[0]}</span>
+								{/* <span>{date.split('T')[0]}</span> */}
 							</article>
 						</>
 					);

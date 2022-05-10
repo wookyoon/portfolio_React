@@ -3,7 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import Header from './components/common/Header';
 import Footer from './components/common/Footer';
 
-import Content from './components/main/Content';
+import News from './components/main/News';
 import Visual from './components/main/Visual';
 
 import Community from './components/sub/Community';
@@ -22,7 +22,7 @@ function App() {
 				<Route exact path='/'>
 					<Header type={'main'} />
 					<Visual />
-					<Content />
+					<News />
 				</Route>
 
 				<Route path='/'>
