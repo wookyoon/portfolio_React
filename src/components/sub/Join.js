@@ -107,11 +107,20 @@ function Join() {
 	return (
 		<Layout name={'Join'}>
 			{success ? <h2>회원가입을 축하합니다.</h2> : null}
+			<div className='title'>
+				<h1>THE BEST TEA-SHOP</h1>
+				<p>
+					Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+					accusantium
+					<br />
+					doloremque laudantium, totam rem aperiam, eaque ipsa quae.
+				</p>
+			</div>
 			<form onSubmit={handleSubmit}>
 				<fieldset>
-					<legend>회원가입 폼 양식</legend>
-					<table border='1'>
-						<caption>회원가입 정보입력</caption>
+					<legend></legend>
+					<table border='0'>
+						<caption></caption>
 						<tbody>
 							{/* user id */}
 							<tr>
@@ -282,6 +291,19 @@ function Join() {
 					</div>
 				</fieldset>
 			</form>
+			<div className='contact'>
+				<div className='warp'>
+					<div>
+						<h1>JOIN OUR NEWSLETTER</h1>
+						<p>Class aptent taciti sociosqu ad litora torquent per</p>
+
+						<input id='email' type='text' placeholder='Email' name='email' />
+						<button>
+							<a href='#'>SUBSCRIBE NOW</a>
+						</button>
+					</div>
+				</div>
+			</div>
 		</Layout>
 	);
 }
