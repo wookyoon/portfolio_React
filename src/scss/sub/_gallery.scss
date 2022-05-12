@@ -1,7 +1,49 @@
 .Gallery {
 	figure {
-		background-image: url(/img/youtube1.jpg);
+		background-image: url(/img/r2.jpg);
 		background-size: cover;
 		background-position: center;
+	}
+	ul {
+		&::after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+
+		li {
+			width: 25%;
+			float: left;
+			padding: 10px;
+
+			.inner {
+				width: 100%;
+				padding: 0px;
+
+				.pic {
+					width: 100%;
+					margin-bottom: 0px;
+
+					img {
+						width: 100%;
+					}
+				}
+				.box {
+					margin-top: -5px;
+					padding-top: 10px;
+					border: 1px solid #111;
+					p {
+						font: 14px/1.2 'arial';
+						color: #777;
+						margin-bottom: 15px;
+					}
+
+					.profile {
+						display: flex;
+						margin-bottom: 15px;
+					}
+				}
+			}
+		}
 	}
 }

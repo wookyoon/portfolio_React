@@ -11,7 +11,7 @@ function Youtube() {
 	useEffect(() => {
 		const key = 'AIzaSyBZFBuapkASPcRBXB2-d_ak5-ecCpVicI4';
 		const playlistId = 'PLICf7Erquw0j_ywqsj-7AWFW-jksjBiaO';
-		const num = 9;
+		const num = 6;
 		const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&key=${key}&playlistId=${playlistId}&maxResults=${num}`;
 		axios.get(url).then((json) => {
 			console.log(json.data.items);
@@ -28,7 +28,7 @@ function Youtube() {
 		<>
 			<Layout name={'Youtube'}>
 				<div className='title'>
-					<h1>THE BEST TEA-SHOP</h1>
+					<h1>The Best Shop</h1>
 					<p>
 						Sed ut perspiciatis unde omnis iste natus error sit voluptatem
 						accusantium
@@ -47,8 +47,8 @@ function Youtube() {
 								<div className='pic'>
 									<img src={vid.snippet.thumbnails.standard.url} />
 								</div>
-								<h2>{tit.length > 44 ? tit.substr(0, 44) + '...' : tit}</h2>
-								<p>{desc.length > 150 ? desc.substr(0, 150) + '...' : desc}</p>
+								<h2>{tit.length > 30 ? tit.substr(0, 30) + '...' : tit}</h2>
+								<p>{desc.length > 140 ? desc.substr(0, 140) + '...' : desc}</p>
 								{/* <span>{date.split('T')[0]}</span> */}
 							</article>
 						</>

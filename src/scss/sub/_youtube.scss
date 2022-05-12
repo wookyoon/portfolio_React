@@ -1,6 +1,6 @@
 .Youtube {
 	figure {
-		background-image: url(/img/department4.jpg);
+		background-image: url(/img/aaa1.jpg);
 		background-size: cover;
 		background-position: center;
 	}
@@ -9,7 +9,7 @@
 		text-align: center;
 		margin-bottom: 100px;
 		h1 {
-			font: 55px/1 'oswald';
+			font: 64px/1 'lato';
 			color: #000;
 			letter-spacing: 2px;
 		}
@@ -29,17 +29,26 @@
 			width: 350px;
 			img {
 				width: 350px;
+				height: 700px;
+				object-fit: cover;
 				cursor: pointer;
+				filter: grayscale(1);
+				transform: scale(0.9);
+			}
+			:hover {
+				filter: grayscale(0.3);
+				transform: scale(1);
 			}
 			h2 {
 				font-size: 28px;
+				font-family: oswald;
 				margin-bottom: 5px;
 			}
 			p {
-				font-family: orelega one;
+				font-family: koulen;
 				font-size: 18px;
 				color: #111;
-				margin-bottom: 22px;
+				margin-bottom: 50px;
 			}
 		}
 	}

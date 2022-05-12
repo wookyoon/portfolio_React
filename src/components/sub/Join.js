@@ -108,7 +108,9 @@ function Join() {
 		<Layout name={'Join'}>
 			{success ? <h2>회원가입을 축하합니다.</h2> : null}
 			<div className='title'>
-				<h1>THE BEST TEA-SHOP</h1>
+				<h1>
+					<span>THE BEST</span> TEA-SHOP
+				</h1>
 				<p>
 					Sed ut perspiciatis unde omnis iste natus error sit voluptatem
 					accusantium

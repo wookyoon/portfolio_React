@@ -10,7 +10,7 @@ function Header(props) {
 			<div className='inner'>
 				<h1>
 					<NavLink activeStyle={active} exact to='/'>
-						Eli Tea Shop
+						ZEBRA
 					</NavLink>
 				</h1>
 

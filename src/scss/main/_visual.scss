@@ -5,11 +5,76 @@ figure {
 	// background-position: center;
 	overflow: hidden;
 	position: relative;
+	filter: saturate(1.5);
 	img {
 		width: 100%;
 		object-fit: cover;
 	}
+	.swiper {
+		height: 100%;
+		overflow: visible;
+
+		.swiper-slide {
+			width: 100%;
+			background: #fff;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font: bold 50px/1 'arial';
+			color: #fff;
+			transform: scale(0.8);
+			transition: 1s;
+		}
+		.swiper-slide::before {
+			content: '';
+			opacity: 0.2;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+			background-color: #000;
+		}
+		.swiper-slide-active {
+			transform: scale(1);
+			opacity: 1;
+			box-shadow: 0px 0px 40px rgba(0, 255, 255, 0.5);
+		}
+
+		.swiper-button-prev {
+			color: #fff;
+		}
+		// :hover {
+		// 	color: red;
+		// }
+
+		.swiper-button-next {
+			color: #fff;
+		}
+		:hover {
+			color: palevioletred;
+			text-shadow: 1px 1px 10px palevioletred;
+		}
+
+		.swiper-pagination {
+			bottom: -60px;
+
+			.swiper-pagination-bullet {
+				transition: 0.5s;
+				background: rgba(255, 255, 255, 0.8);
+			}
+
+			.swiper-pagination-bullet-active {
+				width: 50px;
+				height: 8px;
+				border-radius: 4px;
+				background: #fff;
+			}
+		}
+	}
+
 	.wrap {
+		z-index: 5;
 		position: absolute;
 		top: 50%;
 		left: 50%;
@@ -19,32 +84,29 @@ figure {
 		h1 {
 			font-size: 40px;
 			margin-bottom: 30px;
+			letter-spacing: 1px;
+			text-shadow: 3px 3px #000;
+			font-family: oswald;
 		}
 		h2 {
-			font-size: 80px;
+			font-size: 100px;
 			margin-bottom: 50px;
+			letter-spacing: 1px;
+			text-shadow: 3px 3px #000;
+			font-family: radio canada;
 		}
 		div {
 			a {
-				font-size: 25px;
+				font-size: 30px;
 				letter-spacing: 2px;
 				color: #fff;
-				padding: 13px;
+				padding: 5px 15px;
 				background-color: rgba(153, 153, 153, 0.6);
+				font-family: koulen;
 			}
 			:hover {
-				background-color: #000;
+				background-color: rgba(0, 0, 0, 0.7);
 			}
 		}
 	}
 }
-// .figure::before {
-// 	content: '';
-// 	opacity: 0;
-// 	position: absolute;
-// 	top: 0px;
-// 	left: 0px;
-// 	right: 0px;
-// 	bottom: 0px;
-// 	background-color: #000;
-// }

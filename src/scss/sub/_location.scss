@@ -1,6 +1,6 @@
 .Location {
 	figure {
-		background-image: url(/img/department6.jpg);
+		background-image: url(/img/l1.jpg);
 		background-size: cover;
 		background-position: center;
 	}
@@ -43,7 +43,7 @@
 					width: 500px;
 					height: 50px;
 					float: left;
-					background-color: rgba(0, 128, 0, 0.6);
+					background-color: #111;
 					border: none;
 					font: bold 20px/1 'lato';
 
@@ -70,7 +70,7 @@
 		width: 100px;
 		height: 26px;
 		margin-top: 5px;
-		background-color: rgba(20, 158, 101, 1);
+		background-color: #111;
 		border: none;
 		font: 16px/1 'oswald';
 		letter-spacing: 1px;
@@ -85,13 +85,14 @@
 			width: 120px;
 			height: 26px;
 			margin-right: 5px;
-			background-color: rgba(20, 158, 101, 1);
+			border: 1px solid #111;
 			text-align: center;
-			color: #fff;
+			color: #111;
 			font: 15px/1.5 'oswald';
 			cursor: pointer;
 			&.on {
-				color: yellow;
+				color: #fff;
+				background-color: #111;
 			}
 		}
 	}
