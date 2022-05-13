@@ -5,7 +5,7 @@ figure {
 	// background-position: center;
 	overflow: hidden;
 	position: relative;
-	filter: saturate(1.5);
+	filter: grayscale(0.5);
 	img {
 		width: 100%;
 		object-fit: cover;
@@ -93,7 +93,7 @@ figure {
 			margin-bottom: 50px;
 			letter-spacing: 1px;
 			text-shadow: 3px 3px #000;
-			font-family: radio canada;
+			font-family: libre bodoni;
 		}
 		div {
 			a {
@@ -101,7 +101,7 @@ figure {
 				letter-spacing: 2px;
 				color: #fff;
 				padding: 5px 15px;
-				background-color: rgba(153, 153, 153, 0.6);
+				background-color: rgba(153, 153, 153, 0.7);
 				font-family: koulen;
 			}
 			:hover {

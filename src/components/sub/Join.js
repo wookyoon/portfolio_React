@@ -107,15 +107,29 @@ function Join() {
 	return (
 		<Layout name={'Join'}>
 			{success ? <h2>회원가입을 축하합니다.</h2> : null}
+
+			<div className='contact'>
+				<div className='warp'>
+					<div>
+						<h1>JOIN OUR NEWSLETTER</h1>
+						<p>Class aptent taciti sociosqu ad litora torquent per</p>
+
+						<input id='email' type='text' placeholder='Email' name='email' />
+						<button>
+							<a href='#'>SUBSCRIBE NOW</a>
+						</button>
+					</div>
+				</div>
+			</div>
 			<div className='title'>
 				<h1>
-					<span>THE BEST</span> TEA-SHOP
+					<span>THE BEST</span> THE GOOD
 				</h1>
 				<p>
-					Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-					accusantium
+					<span>Sed ut perspiciatis unde omnis iste na</span>tus error sit
+					voluptatem accusantium
 					<br />
-					doloremque laudantium, totam rem aperiam, eaque ipsa quae.
+					<span>doloremque laudantium, totam</span>rem aperiam, eaque ipsa quae.
 				</p>
 			</div>
 			<form onSubmit={handleSubmit}>
@@ -293,19 +307,6 @@ function Join() {
 					</div>
 				</fieldset>
 			</form>
-			<div className='contact'>
-				<div className='warp'>
-					<div>
-						<h1>JOIN OUR NEWSLETTER</h1>
-						<p>Class aptent taciti sociosqu ad litora torquent per</p>
-
-						<input id='email' type='text' placeholder='Email' name='email' />
-						<button>
-							<a href='#'>SUBSCRIBE NOW</a>
-						</button>
-					</div>
-				</div>
-			</div>
 		</Layout>
 	);
 }

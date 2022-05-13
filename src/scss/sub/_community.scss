@@ -43,6 +43,9 @@
 			border: none;
 			cursor: pointer;
 		}
+		button:hover {
+			background-color: #000;
+		}
 	}
 
 	.showBox {
@@ -50,20 +53,20 @@
 		padding: 50px;
 
 		article {
-			background: #666;
+			background: #777;
 			height: 160px;
 			margin-bottom: 20px;
 			padding: 30px;
 			h2 {
-				font: 35px/1 'radio canada';
+				font: bold 35px/1 'lato';
 				letter-spacing: 1px;
-				color: #fff;
+				color: #111;
 				margin-bottom: 15px;
 			}
 			p {
-				font: 30px/1 'koulen';
+				font: 30px/1 'oswald';
 				letter-spacing: 2px;
-				color: orange;
+				color: #fff;
 				margin-bottom: 5px;
 			}
 			button {
@@ -77,6 +80,9 @@
 				margin-right: 15px;
 				border: none;
 				cursor: pointer;
+			}
+			button:hover {
+				background-color: #000;
 			}
 		}
 	}

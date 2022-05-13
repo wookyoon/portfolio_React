@@ -12,7 +12,7 @@
 		}
 
 		li {
-			width: 25%;
+			width: 33.333%;
 			float: left;
 			padding: 10px;
 
@@ -23,18 +23,26 @@
 				.pic {
 					width: 100%;
 					margin-bottom: 0px;
+					filter: grayscale(1);
+					transform: scale(0.9);
+					cursor: pointer;
 
 					img {
 						width: 100%;
 					}
 				}
+				:hover {
+					filter: grayscale(0.5);
+					transform: scale(1);
+				}
 				.box {
 					margin-top: -5px;
 					padding-top: 10px;
-					border: 1px solid #111;
+
+					text-align: center;
 					p {
-						font: 14px/1.2 'arial';
-						color: #777;
+						font: 25px/1 'koulen';
+						color: #111;
 						margin-bottom: 15px;
 					}
 

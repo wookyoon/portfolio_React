@@ -34,6 +34,9 @@
 				color: #000;
 				margin-bottom: 20px;
 				text-shadow: 1px 1px 1px #999;
+				span {
+					color: #fff;
+				}
 			}
 		}
 
@@ -41,15 +44,16 @@
 			width: 50%;
 			margin-top: 200px;
 			height: 500px;
-			background-color: rgba(153, 153, 153, 0.2);
+			background-color: rgba(153, 153, 153, 0.1);
 			position: relative;
-			color: #fff;
+			color: #111;
+			font: 20px/2 'oswald';
 			fieldset {
 				border: none;
 				table {
 					position: absolute;
-					top: 20%;
-					left: 20%;
+					top: 0%;
+					left: 25%;
 
 					tbody {
 						position: absolute;
@@ -73,18 +77,18 @@
 				height: 500px;
 				div {
 					position: absolute;
-					left: 55%;
+					right: 55%;
 					top: 50%;
 					h1 {
 						font: 48px/1 'oswald';
-						color: #000;
+						color: #fff;
 						letter-spacing: 2px;
 						text-shadow: 1px 1px 1px #999;
 						height: 30px;
 					}
 					p {
 						font: 25px/1 'oswald';
-						color: #000;
+						color: #fff;
 						text-shadow: 1px 1px 1px #999;
 						margin-bottom: 20px;
 					}
@@ -92,7 +96,7 @@
 					#email {
 						width: 450px;
 						height: 50px;
-						background-color: rgba(153, 153, 153, 0.5);
+						background-color: #ddd;
 						border: none;
 						font: 20px/1 'lato';
 						text-indent: 1em;
@@ -102,7 +106,7 @@
 					button {
 						width: 450px;
 						height: 50px;
-						background-color: #111;
+						background-color: #222;
 						border: none;
 						font: bold 20px/1 'lato';
 

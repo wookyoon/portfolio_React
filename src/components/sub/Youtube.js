@@ -47,8 +47,8 @@ function Youtube() {
 								<div className='pic'>
 									<img src={vid.snippet.thumbnails.standard.url} />
 								</div>
-								<h2>{tit.length > 30 ? tit.substr(0, 30) + '...' : tit}</h2>
-								<p>{desc.length > 140 ? desc.substr(0, 140) + '...' : desc}</p>
+								<h2>{tit.length > 20 ? tit.substr(0, 20) + '...' : tit}</h2>
+								<p>{desc.length > 120 ? desc.substr(0, 120) + '...' : desc}</p>
 								{/* <span>{date.split('T')[0]}</span> */}
 							</article>
 						</>
