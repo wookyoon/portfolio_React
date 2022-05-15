@@ -14,14 +14,14 @@
 				width: 590px;
 				h1 {
 					font: 60px/1 'oswald';
-					color: #000;
+					color: #c9ab81;
 					letter-spacing: 10px;
 					float: left;
 					height: 30px;
 				}
 				p {
 					font: 25px/1 'oswald';
-					color: #555;
+					color: #999;
 					float: left;
 				}
 			}
@@ -33,7 +33,7 @@
 					width: 500px;
 					height: 50px;
 					float: left;
-					background-color: rgba(153, 153, 153, 0.4);
+					background-color: #555;
 					border: none;
 					font: 20px/1 'lato';
 					text-indent: 1em;
@@ -43,12 +43,12 @@
 					width: 500px;
 					height: 50px;
 					float: left;
-					background-color: #222;
+					background-color: #c9ab81;
 					border: none;
 					font: bold 20px/1 'lato';
 
 					a {
-						color: #fff;
+						color: #000;
 					}
 				}
 				::after {
@@ -70,11 +70,11 @@
 		width: 100px;
 		height: 26px;
 		margin-top: 5px;
-		background-color: #111;
-		border: none;
+		background-color: #000;
+		border: 1px solid #c9ab81;
 		font: 16px/1 'oswald';
 		letter-spacing: 1px;
-		color: #fff;
+		color: #c9ab81;
 		cursor: pointer;
 	}
 
@@ -85,14 +85,14 @@
 			width: 120px;
 			height: 26px;
 			margin-right: 5px;
-			border: 1px solid #111;
+			border: 1px solid #c9ab81;
 			text-align: center;
-			color: #111;
+			color: #c9ab81;
 			font: 15px/1.5 'oswald';
 			cursor: pointer;
 			&.on {
-				color: #fff;
-				background-color: #111;
+				color: #000;
+				background-color: #c9ab81;
 			}
 		}
 	}

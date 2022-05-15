@@ -25,7 +25,7 @@ function Pics(props) {
 							? { transform: `translateX(${position / 1.2}px)` }
 							: null
 					}>
-					FLICKR
+					Gallery
 				</h2>
 				<p
 					style={
@@ -37,7 +37,7 @@ function Pics(props) {
 							  }
 							: null
 					}>
-					FLICKR
+					current pictures
 				</p>
 
 				<ul className='list'>

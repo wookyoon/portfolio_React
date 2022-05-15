@@ -8,11 +8,6 @@ function Footer() {
 		<footer>
 			<div className='inner'>
 				<p>2022 WK &copy; ALL RIGHTS RESERVED.</p>
-				<div className='members'>
-					{members.map((member, idx) => (
-						<img key={idx} src={`${path}/img/${member.pic}`} />
-					))}
-				</div>
 			</div>
 		</footer>
 	);

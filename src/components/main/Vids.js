@@ -13,7 +13,7 @@ function Vids() {
 				<h2>Recent Youtube</h2>
 				<ul>
 					{vidData.map((vid, idx) => {
-						if (idx < 3) {
+						if (idx < 4) {
 							return (
 								<li
 									key={idx}
@@ -27,6 +27,10 @@ function Vids() {
 						}
 					})}
 				</ul>
+				<div className='script'>
+					<h2>ddd</h2>
+					<p>ddddd</p>
+				</div>
 			</section>
 
 			<Popup ref={pop}>

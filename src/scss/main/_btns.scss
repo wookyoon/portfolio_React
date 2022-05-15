@@ -7,15 +7,16 @@
 	li {
 		width: 10px;
 		height: 10px;
-		background: #fff;
-		border: 1px solid #777;
+		background: #c9ab81;
+		// border: 1px solid #777;
+		border-radius: 10px;
 		margin-bottom: 20px;
 		cursor: pointer;
 		transition: 0.5s;
 
 		&.on {
-			height: 100px;
-			background: #333;
+			height: 150px;
+			background: #c9ab81;
 		}
 	}
 }

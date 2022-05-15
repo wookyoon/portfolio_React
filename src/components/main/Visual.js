@@ -9,7 +9,7 @@ function Visual() {
 	return (
 		<figure className='myScroll on'>
 			<Swiper
-				spaceBetween={10}
+				spaceBetween={0}
 				loop={true}
 				centeredSlides={true}
 				autoplay={{

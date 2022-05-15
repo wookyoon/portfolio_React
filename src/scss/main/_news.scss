@@ -4,16 +4,35 @@
 	padding: 5vw;
 	margin-top: 20px;
 	text-align: center;
+	background-color: #000;
 	h1 {
 		font: 45px/1 'oswald';
-		color: #000;
+		color: #c9ab81;
 		letter-spacing: 4px;
 		margin-bottom: 80px;
 	}
+	.pic {
+		float: left;
+		width: 45%;
+		margin-right: 10%;
+		overflow: hidden;
+		img {
+			width: 100%;
+			filter: grayscale(1);
+			cursor: pointer;
+		}
+		img:hover {
+			// transform: scale(1.1);
+			filter: grayscale(0.5);
+		}
+	}
+
 	div {
+		float: left;
+		width: 45%;
 		li {
 			background: rgba(102, 102, 102, 0.7);
-			height: 160px;
+			height: 144px;
 			margin-bottom: 30px;
 			padding: 30px;
 			cursor: pointer;
@@ -31,7 +50,7 @@
 			}
 		}
 		:hover {
-			background-color: #000;
+			background-color: #c9ab81;
 		}
 	}
 }

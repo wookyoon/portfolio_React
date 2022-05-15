@@ -2,10 +2,20 @@
 	width: 100%;
 	height: 100vh;
 	padding: 5vw;
-	background: lightyellow;
-
+	background: #222;
+	h2 {
+		font: bold 40px/1.3 'oswald';
+		color: #c9ab81;
+	}
 	ul li {
-		display: inline-block;
+		float: left;
 		cursor: pointer;
+		img {
+			width: 400px;
+		}
+	}
+	.script {
+		float: left;
+		width: 400px;
 	}
 }

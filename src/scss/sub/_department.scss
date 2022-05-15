@@ -33,7 +33,7 @@
 					cursor: pointer;
 				}
 				img:hover {
-					transform: scale(1.1);
+					// transform: scale(1.1);
 					filter: grayscale(0.5);
 				}
 			}
@@ -82,7 +82,7 @@
 		text-align: center;
 		h1 {
 			font: 64px/1 'lato';
-			color: #fff;
+			color: #c9ab81;
 		}
 		p {
 			font: 25px/1 'oswald';
@@ -118,14 +118,14 @@
 					}
 					:hover {
 						filter: grayscale(0.5);
-						transform: scale(1);
+						// transform: scale(1);
 					}
 				}
 				div::after {
 					display: inline-block;
 					content: '';
 					position: absolute;
-					border: 1px solid #c9ab81;
+					border: 1px solid #c9ab8177;
 					width: 270px;
 					height: 540px;
 					top: 15px;

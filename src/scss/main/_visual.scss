@@ -16,7 +16,7 @@ figure {
 
 		.swiper-slide {
 			width: 100%;
-			background: #fff;
+			background: #000;
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -42,18 +42,17 @@ figure {
 		}
 
 		.swiper-button-prev {
-			color: #fff;
+			color: #c9ab81;
 		}
 		// :hover {
 		// 	color: red;
 		// }
 
 		.swiper-button-next {
-			color: #fff;
+			color: #c9ab81;
 		}
 		:hover {
-			color: palevioletred;
-			text-shadow: 1px 1px 10px palevioletred;
+			color: #fff;
 		}
 
 		.swiper-pagination {
@@ -61,14 +60,14 @@ figure {
 
 			.swiper-pagination-bullet {
 				transition: 0.5s;
-				background: rgba(255, 255, 255, 0.8);
+				background: #000;
 			}
 
 			.swiper-pagination-bullet-active {
 				width: 50px;
 				height: 8px;
 				border-radius: 4px;
-				background: #fff;
+				background: #000;
 			}
 		}
 	}
@@ -80,13 +79,13 @@ figure {
 		left: 50%;
 		transform: translate(-50%, -50%);
 		text-align: center;
-		color: #fff;
 		h1 {
 			font-size: 40px;
 			margin-bottom: 30px;
 			letter-spacing: 1px;
 			text-shadow: 3px 3px #000;
 			font-family: oswald;
+			color: #c9ab81;
 		}
 		h2 {
 			font-size: 100px;
@@ -94,6 +93,7 @@ figure {
 			letter-spacing: 1px;
 			text-shadow: 3px 3px #000;
 			font-family: libre bodoni;
+			color: #c9ab81;
 		}
 		div {
 			a {
@@ -101,11 +101,12 @@ figure {
 				letter-spacing: 2px;
 				color: #fff;
 				padding: 5px 15px;
-				background-color: rgba(153, 153, 153, 0.7);
+				background-color: #c9ab8175;
 				font-family: koulen;
 			}
 			:hover {
-				background-color: rgba(0, 0, 0, 0.7);
+				background-color: rgba(0, 0, 0, 0.4);
+				color: #c9ab81;
 			}
 		}
 	}
