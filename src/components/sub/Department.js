@@ -15,6 +15,29 @@ function Department() {
 
 	return (
 		<Layout name={'Department'}>
+			<div className='title'>
+				<h1>CEO's Desk</h1>
+			</div>
+			<section className='intro'>
+				<div className='wrap'>
+					<div className='left'>
+						<img src={`${path}/img/ceo.jpg`} alt='' />
+					</div>
+					<div className='right'>
+						<h2>WELCOME TO THE BEST UNIVERSE in the world</h2>
+						<p>
+							&nbsp;The Chief Electoral Office functions under the overall
+							supervision and control of the Election Commission of The
+							instructions issued World.
+						</p>
+						<h3>
+							CEO &nbsp;
+							<span>Elena Damyanova</span>
+						</h3>
+						<a href='#'>VIEW MORE</a>
+					</div>
+				</div>
+			</section>
 			<div className='summary'>
 				<h1>Our Experts</h1>
 				<p>

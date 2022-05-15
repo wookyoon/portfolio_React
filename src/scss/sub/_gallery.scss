@@ -4,51 +4,109 @@
 		background-size: cover;
 		background-position: center;
 	}
-	ul {
+	.loading {
+		position: absolute;
+		width: 100%;
+		top: 0px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	button {
+		background-color: #000;
+		font: 36px/2 'oswald';
+		color: #fff;
+		letter-spacing: 2px;
+		cursor: pointer;
+	}
+	button:hover {
+		color: #c9ab81;
+	}
+	.searchBox {
+		float: right;
+		input {
+			width: 300px;
+			height: 40px;
+			border: 1px solid #000;
+			background-color: #222;
+			margin-right: 20px;
+			padding-top: 10px;
+			color: #fff;
+			font-size: 20px;
+		}
+	}
+	.frame {
+		transform: translateY(200px);
+		opacity: 0;
+		transition: 1s;
+		margin-top: 100px;
+
+		&.on {
+			transform: translateY(0px);
+			opacity: 1;
+		}
+
 		&::after {
 			content: '';
 			display: block;
 			clear: both;
 		}
-
-		li {
+		article {
 			width: 33.333%;
 			float: left;
 			padding: 10px;
 
 			.inner {
 				width: 100%;
-				padding: 0px;
+				background: #222;
+				box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+				padding: 10px;
 
 				.pic {
 					width: 100%;
-					margin-bottom: 0px;
-					filter: grayscale(1);
-					transform: scale(0.9);
+					margin-bottom: 10px;
 					cursor: pointer;
+					overflow: hidden;
 
 					img {
 						width: 100%;
+						// height: 300px;
+						object-fit: cover;
+						filter: grayscale(1);
 					}
 				}
-				:hover {
-					filter: grayscale(0.5);
-					transform: scale(1);
+				img:hover {
+					filter: grayscale(0);
+					transform: scale(1.2);
 				}
-				.box {
-					margin-top: -5px;
-					padding-top: 10px;
 
-					text-align: center;
-					p {
-						font: 25px/1 'koulen';
-						color: #111;
-						margin-bottom: 15px;
+				h2 {
+					text-align: left;
+					font: normal 30px/1.2 'koulen';
+					color: #c9ab81;
+					margin-bottom: 20px;
+					word-wrap: break-word;
+					//word-wrap: normal : 단어단위로 줄바꿈
+					//word-wrap: breack-word : 글자단위로 줄바꿈
+				}
+
+				.profile {
+					display: flex;
+					justify-content: right;
+					align-items: center;
+
+					img {
+						width: 40px;
+						height: 40px;
 					}
+					span {
+						font: 20px/1 'oswald';
+						color: #999;
+						margin-left: 10px;
+						cursor: pointer;
 
-					.profile {
-						display: flex;
-						margin-bottom: 15px;
+						&:hover {
+							color: #c9ab81;
+						}
 					}
 				}
 			}

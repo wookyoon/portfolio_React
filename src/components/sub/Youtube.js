@@ -1,28 +1,12 @@
 import Layout from '../common/Layout';
-import { useEffect, useState } from 'react';
-import axios from 'axios';
+import { useRef, useState } from 'react';
+import { useSelector } from 'react-redux';
 import Popup from '../common/Popup';
 
 function Youtube() {
-	const [vids, setVids] = useState([]);
-	const [open, setOpen] = useState(false);
+	const vidData = useSelector((store) => store.youtubeReducer.youtube);
+	const pop = useRef(null);
 	const [index, setIndex] = useState(0);
-
-	useEffect(() => {
-		const key = 'AIzaSyBZFBuapkASPcRBXB2-d_ak5-ecCpVicI4';
-		const playlistId = 'PLICf7Erquw0j_ywqsj-7AWFW-jksjBiaO';
-		const num = 6;
-		const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&key=${key}&playlistId=${playlistId}&maxResults=${num}`;
-		axios.get(url).then((json) => {
-			console.log(json.data.items);
-			setVids(json.data.items);
-		});
-	}, []);
-
-	const handleClick = (index) => {
-		setOpen(true);
-		setIndex(index);
-	};
 
 	return (
 		<>
@@ -36,34 +20,41 @@ function Youtube() {
 						doloremque laudantium, totam rem aperiam, eaque ipsa quae.
 					</p>
 				</div>
-				{vids.map((vid, idx) => {
+				{vidData.map((vid, idx) => {
 					const tit = vid.snippet.title;
 					const desc = vid.snippet.description;
-					// const date = vid.snippet.publishedAt;
+					const date = vid.snippet.publishedAt;
 
 					return (
-						<>
-							<article key={idx} onClick={() => handleClick(idx)}>
-								<div className='pic'>
-									<img src={vid.snippet.thumbnails.standard.url} />
-								</div>
-								<h2>{tit.length > 20 ? tit.substr(0, 20) + '...' : tit}</h2>
-								<p>{desc.length > 120 ? desc.substr(0, 120) + '...' : desc}</p>
-								{/* <span>{date.split('T')[0]}</span> */}
-							</article>
-						</>
+						<article
+							key={idx}
+							onClick={() => {
+								pop.current.open();
+								setIndex(idx);
+							}}>
+							<div className='pic'>
+								<img src={vid.snippet.thumbnails.standard.url} />
+							</div>
+							<h2>{tit.length > 20 ? tit.substr(0, 20) + '...' : tit}</h2>
+							<p>{desc.length > 120 ? desc.substr(0, 120) + '...' : desc}</p>
+							<span>{date.split('T')[0]}</span>
+						</article>
 					);
 				})}
 			</Layout>
 
-			{open ? (
-				<Popup setOpen={setOpen}>
-					<iframe
-						//팝업이 호출될때 변경된 index순번의 vids state값의 데이터값이 팝업영상으로 출력
-						src={`https://www.youtube.com/embed/${vids[index].snippet.resourceId.videoId}`}
-						frameborder='0'></iframe>
-				</Popup>
-			) : null}
+			<Popup ref={pop}>
+				{vidData.length !== 0 && (
+					<>
+						<iframe
+							src={`https://www.youtube.com/embed/${vidData[index].snippet.resourceId.videoId}`}
+							frameBorder='0'></iframe>
+						<span className='close' onClick={() => pop.current.close()}>
+							close
+						</span>
+					</>
+				)}
+			</Popup>
 		</>
 	);
 }

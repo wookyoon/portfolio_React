@@ -19,7 +19,8 @@ function Layout(props) {
 					<h1>{props.name}</h1>
 					<p>
 						Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-						Accusantium, libre koulen aliquid.
+						<br />
+						Accusantium, sodales libre koulen aliquid.
 					</p>
 				</div>
 			</figure>

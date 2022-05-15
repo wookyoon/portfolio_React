@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 function Header(props) {
-	const active = { color: 'black' };
+	const active = { color: '#c9ab81' };
 
 	return (
 		<header className={props.type}>
