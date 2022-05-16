@@ -11,9 +11,7 @@
 		width: 100%;
 		height: 100vh;
 		display: flex;
-		background-image: url(/img/join1.jpg);
-		background-size: cover;
-		filter: saturate(1.5);
+		background-color: #000;
 
 		.title {
 			position: absolute;
@@ -22,21 +20,13 @@
 			top: 15%;
 			h1 {
 				font: 60px/1 'oswald';
-				color: #000;
+				color: #c9ab81;
 				letter-spacing: 2px;
-				text-shadow: 1px 1px 1px #999;
-				span {
-					color: #fff;
-				}
 			}
 			p {
 				font: 25px/1 'oswald';
-				color: #000;
+				color: #999;
 				margin-bottom: 20px;
-				text-shadow: 1px 1px 1px #999;
-				span {
-					color: #fff;
-				}
 			}
 		}
 
@@ -44,9 +34,9 @@
 			width: 50%;
 			margin-top: 200px;
 			height: 500px;
-			background-color: rgba(153, 153, 153, 0.1);
+			background-color: #333;
 			position: relative;
-			color: #111;
+			color: #c9ab81;
 			font: 20px/2 'oswald';
 			fieldset {
 				border: none;
@@ -75,21 +65,20 @@
 				text-align: center;
 				margin-top: 200px;
 				height: 500px;
+				background-color: #222;
 				div {
 					position: absolute;
 					right: 55%;
 					top: 50%;
 					h1 {
 						font: 48px/1 'oswald';
-						color: #fff;
+						color: #c9ab81;
 						letter-spacing: 2px;
-						text-shadow: 1px 1px 1px #999;
 						height: 30px;
 					}
 					p {
 						font: 25px/1 'oswald';
-						color: #fff;
-						text-shadow: 1px 1px 1px #999;
+						color: #999;
 						margin-bottom: 20px;
 					}
 
@@ -106,7 +95,7 @@
 					button {
 						width: 450px;
 						height: 50px;
-						background-color: #222;
+						background-color: #111;
 						border: none;
 						font: bold 20px/1 'lato';
 

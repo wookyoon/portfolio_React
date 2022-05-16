@@ -122,14 +122,12 @@ function Join() {
 				</div>
 			</div>
 			<div className='title'>
-				<h1>
-					<span>THE BEST</span> THE GOOD
-				</h1>
+				<h1>What Does It Mean To Be a Man?</h1>
 				<p>
-					<span>Sed ut perspiciatis unde omnis iste na</span>tus error sit
-					voluptatem accusantium
+					Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+					accusantium
 					<br />
-					<span>doloremque laudantium, totam</span>rem aperiam, eaque ipsa quae.
+					doloremque laudantium, totam rem aperiam, eaque ipsa quae.
 				</p>
 			</div>
 			<form onSubmit={handleSubmit}>

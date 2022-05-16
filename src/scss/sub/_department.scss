@@ -7,11 +7,21 @@
 	.title {
 		text-align: left;
 		h1 {
-			font: 64px/1 'Lato';
+			font: 64px/1 'oswald';
 			letter-spacing: 5px;
 			color: #c9ab81;
+			&::after {
+				display: block;
+				content: '';
+				position: absolute;
+				margin-top: 10px;
+				width: 290px;
+				height: 1px;
+				background-color: #c9ab81;
+			}
 		}
 	}
+
 	.intro {
 		width: 100%;
 		margin-bottom: 100px;
@@ -162,7 +172,7 @@
 
 			h1 {
 				font: 48px/1 'oswald';
-				color: #fff;
+				color: #c9ab81;
 				letter-spacing: 2px;
 
 				height: 30px;

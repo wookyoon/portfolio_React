@@ -1,8 +1,7 @@
 import { Route, Switch } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { setYoutube, setMembers, setFlickr } from './redux/action';
-import axios from 'axios';
+import * as types from './redux/actionType';
 
 import Header from './components/common/Header';
 import Footer from './components/common/Footer';
@@ -18,41 +17,21 @@ import Youtube from './components/sub/Youtube';
 
 import './scss/style.scss';
 
-const path = process.env.PUBLIC_URL;
-
 function App() {
 	const dispatch = useDispatch();
-	const fetchYoutube = async () => {
-		const key = 'AIzaSyBZFBuapkASPcRBXB2-d_ak5-ecCpVicI4';
-		const playlistId = 'PLICf7Erquw0j_ywqsj-7AWFW-jksjBiaO';
-		const num = 6;
-		const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&key=${key}&playlistId=${playlistId}&maxResults=${num}`;
-
-		await axios.get(url).then((json) => {
-			dispatch(setYoutube(json.data.items));
-		});
-	};
-	const fetchMembers = async () => {
-		const url = path + '/DB/member.json';
-		await axios.get(url).then((json) => {
-			dispatch(setMembers(json.data.members));
-		});
-	};
-	const fetchFlickr = async () => {
-		const key = '0704e8db014aec14b6eeb7b688a6aa3c';
-		const method_interest = 'flickr.interestingness.getList';
-		const num = 20;
-		const url = `https://www.flickr.com/services/rest/?method=${method_interest}&per_page=${num}&api_key=${key}&nojsoncallback=1&format=json`;
-
-		await axios.get(url).then((json) => {
-			dispatch(setFlickr(json.data.photos.photo));
-		});
-	};
 
 	useEffect(() => {
-		fetchYoutube();
-		fetchMembers();
-		fetchFlickr();
+		//플리커 액션 객체를 saga.js에 전달
+		dispatch({
+			type: types.FLICKR.start,
+			opt: { type: 'user', count: 100, user: '195467310@N04' },
+		});
+
+		//유튜브 액션 객체를 saga.js에 전달
+		dispatch({ type: types.YOUTUBE.start });
+
+		//멤버 액션 객체를 sgag.js에 전달
+		dispatch({ type: types.MEMBERS.start });
 	}, []);
 
 	return (

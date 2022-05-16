@@ -4,6 +4,13 @@
 		background-size: cover;
 		background-position: center;
 	}
+	.intro {
+		text-align: center;
+		h1 {
+			font: 64px/1 'lato';
+			color: #c9ab81;
+		}
+	}
 	.loading {
 		position: absolute;
 		width: 100%;

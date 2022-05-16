@@ -34,7 +34,7 @@ function News() {
 			<div>
 				{/* posts값 중에서 최근글 3개까지만 화면에 출력 */}
 				{posts.map((post, idx) => {
-					if (idx < 4) {
+					if (idx < 5) {
 						return (
 							<li key={idx}>
 								<h2>{post.title}</h2>

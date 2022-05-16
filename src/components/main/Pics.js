@@ -42,7 +42,7 @@ function Pics(props) {
 
 				<ul className='list'>
 					{pics.map((pic, idx) => {
-						if (idx < 10) {
+						if (idx < 9) {
 							return (
 								<li
 									key={idx}
