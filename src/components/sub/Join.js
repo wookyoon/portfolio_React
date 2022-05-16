@@ -1,6 +1,7 @@
 import Layout from '../common/Layout';
 import { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
+const path = process.env.PUBLIC_URL;
 
 function Join() {
 	const history = useHistory();
@@ -108,6 +109,16 @@ function Join() {
 		<Layout name={'Join'}>
 			{success ? <h2>회원가입을 축하합니다.</h2> : null}
 
+			<div className='title'>
+				<h1>What Does It Mean To Be a Man?</h1>
+				<p>
+					Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+					accusantium
+					<br />
+					doloremque laudantium, totam rem aperiam, eaque ipsa quae.
+				</p>
+			</div>
+
 			<div className='contact'>
 				<div className='warp'>
 					<div>
@@ -121,15 +132,7 @@ function Join() {
 					</div>
 				</div>
 			</div>
-			<div className='title'>
-				<h1>What Does It Mean To Be a Man?</h1>
-				<p>
-					Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-					accusantium
-					<br />
-					doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-				</p>
-			</div>
+
 			<form onSubmit={handleSubmit}>
 				<fieldset>
 					<legend></legend>
