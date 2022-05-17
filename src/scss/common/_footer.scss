@@ -1,16 +1,136 @@
 footer {
+	background-color: #000;
 	width: 100%;
-	background: #000;
+	overflow: hidden;
+	.swiper {
+		height: 100%;
+		overflow: visible;
+		margin-top: 40px;
+		margin-bottom: 80px;
+
+		.swiper-slide {
+			width: 100%;
+			background: #000;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font: bold 50px/1 'arial';
+			color: #fff;
+			transform: scale(1);
+			transition: 1s;
+			img {
+				width: 50%;
+				object-fit: cover;
+			}
+		}
+		.swiper-slide::before {
+			content: '';
+			opacity: 0.2;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+			background-color: #000;
+		}
+		// .swiper-slide-active {
+		// 	transform: scale(1);
+		// 	opacity: 1;
+		// }
+	}
 	.inner {
 		width: 1180px;
-		margin: 0px auto;
-		position: relative;
-		padding: 50px;
-		p {
-			font: 12px/1.2 'arial';
-			color: #c9ab81;
-			text-align: center;
-			letter-spacing: 2px;
+		height: 400px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		.left {
+			h2 {
+				font: 50px 'Libre Bodoni';
+				color: #c9ab81;
+				margin-bottom: 20px;
+				&::after {
+					content: '';
+					display: block;
+					width: 175px;
+					height: 1px;
+					background-color: #c9ab81;
+					margin-top: 10px;
+				}
+			}
+			p {
+				font: bold 16px/2 'lato';
+				color: #c9ab81;
+				margin-bottom: 20px;
+			}
+			ul {
+				display: flex;
+				justify-content: flex-start;
+				li {
+					font-size: 16px;
+					margin-right: 20px;
+					a {
+						color: #fff;
+					}
+				}
+			}
+		}
+		.middle {
+			h6 {
+				font: 18px 'lato';
+				color: #c9ab81;
+				margin-bottom: 20px;
+				&::after {
+					content: '';
+					display: block;
+					width: 87px;
+					height: 1px;
+					background-color: #c9ab81;
+					margin-top: 10px;
+				}
+			}
+			ul {
+				li {
+					font: bold 17px/2 'lato';
+					color: #c9ab81;
+					margin-bottom: 10px;
+					a {
+						color: #c9ab81;
+					}
+				}
+			}
+		}
+		.right {
+			h6 {
+				font: 20px 'lato';
+				color: #c9ab81;
+				margin-bottom: 20px;
+				&::after {
+					content: '';
+					display: block;
+					width: 122px;
+					height: 1px;
+					background-color: #c9ab81;
+					margin-top: 10px;
+				}
+			}
+			ul {
+				li {
+					font: bold 17px/2 'lato';
+					color: #999;
+					margin-bottom: 5px;
+					display: flex;
+					flex-direction: column;
+					a {
+						color: #c9ab81;
+					}
+					span {
+						font-style: italic;
+						font-size: 14px;
+					}
+				}
+			}
 		}
 	}
 }

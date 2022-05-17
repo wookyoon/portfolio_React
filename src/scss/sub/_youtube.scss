@@ -37,6 +37,7 @@
 				cursor: pointer;
 				filter: grayscale(1);
 				transform: scale(0.9);
+				transition: 0.5s;
 			}
 			img:hover {
 				filter: grayscale(0.3);
@@ -58,6 +59,60 @@
 				font-size: 18px;
 				color: #fff;
 				margin-bottom: 50px;
+			}
+		}
+	}
+	.contact {
+		width: 100%;
+		text-align: center;
+		margin-top: 120px;
+		margin-bottom: -100px;
+		background-color: #111;
+
+		.warp {
+			padding-top: 25px;
+			width: 500px;
+			height: 300px;
+			margin: 0 auto;
+
+			h1 {
+				font: 48px/1 'oswald';
+				color: #c9ab81;
+				letter-spacing: 2px;
+
+				height: 30px;
+			}
+			p {
+				font: 25px/1 'oswald';
+				color: #999;
+				margin-bottom: 20px;
+			}
+
+			#email {
+				width: 450px;
+				height: 50px;
+				background-color: #333;
+				border: none;
+				font: 20px/1 'lato';
+				color: #c9ab81;
+				text-indent: 1em;
+				margin-bottom: 20px;
+			}
+
+			button {
+				width: 450px;
+				height: 50px;
+				background-color: #666;
+				border: none;
+				font: bold 20px/1 'lato';
+				transition: 0.5s;
+
+				a {
+					color: #fff;
+				}
+				a:hover {
+					color: #c9ab81;
+				}
 			}
 		}
 	}

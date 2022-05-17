@@ -149,6 +149,18 @@ function Gallery() {
 						})}
 					</Masonry>
 				</div>
+
+				<div className='contact'>
+					<div className='warp'>
+						<h1>JOIN OUR NEWSLETTER</h1>
+						<p>Class aptent taciti sociosqu ad litora torquent per</p>
+
+						<input id='email' type='text' placeholder='Email' name='email' />
+						<button>
+							<a href='#'>SUBSCRIBE NOW</a>
+						</button>
+					</div>
+				</div>
 			</Layout>
 
 			<Popup ref={pop}>

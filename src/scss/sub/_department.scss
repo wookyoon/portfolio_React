@@ -41,6 +41,7 @@
 					width: 100%;
 					filter: grayscale(1);
 					cursor: pointer;
+					transition: 0.5s;
 				}
 				img:hover {
 					// transform: scale(1.1);
@@ -79,6 +80,7 @@
 					border: 1px solid #fff;
 					font: 25px/1.5 'oswald';
 					color: #fff;
+					transition: 0.5s;
 				}
 				a:hover {
 					color: #c9ab81;
@@ -125,10 +127,11 @@
 						filter: grayscale(1);
 						transform: scale(0.9);
 						cursor: pointer;
+						transition: 0.5s;
 					}
 					:hover {
 						filter: grayscale(0.5);
-						// transform: scale(1);
+						transform: scale(1);
 					}
 				}
 				div::after {
@@ -200,9 +203,13 @@
 				background-color: #666;
 				border: none;
 				font: bold 20px/1 'lato';
+				transition: 0.5s;
 
 				a {
 					color: #fff;
+				}
+				a:hover {
+					color: #c9ab81;
 				}
 			}
 		}

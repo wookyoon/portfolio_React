@@ -24,7 +24,7 @@ export const fetchFlickr = async (opt) => {
 export const fetchYoutube = async () => {
 	const key = 'AIzaSyBZFBuapkASPcRBXB2-d_ak5-ecCpVicI4';
 	const playlistId = 'PLICf7Erquw0j_ywqsj-7AWFW-jksjBiaO';
-	const num = 6;
+	const num = 9;
 	const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&key=${key}&playlistId=${playlistId}&maxResults=${num}`;
 
 	return await axios.get(url);
