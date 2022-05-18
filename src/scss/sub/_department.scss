@@ -85,6 +85,7 @@
 				a:hover {
 					color: #c9ab81;
 					border-color: #c9ab81;
+					text-shadow: 1px 1px 5px #c9ab81;
 				}
 			}
 		}
@@ -200,16 +201,16 @@
 			button {
 				width: 450px;
 				height: 50px;
-				background-color: #666;
+				background-color: #c9a067;
 				border: none;
 				font: bold 20px/1 'lato';
 				transition: 0.5s;
 
 				a {
-					color: #fff;
+					color: #000;
 				}
 				a:hover {
-					color: #c9ab81;
+					color: #fff;
 				}
 			}
 		}

@@ -7,6 +7,12 @@ const path = process.env.PUBLIC_URL;
 function Footer() {
 	return (
 		<footer>
+			<div className='vid'>
+				<video src={`${path}/img/vid2.mp4`} loop autoPlay muted></video>
+				<h2>Get Your Treatment Now</h2>
+				<a href='#'>View More</a>
+			</div>
+
 			<Swiper
 				slidesPerView={5}
 				spaceBetween={0}

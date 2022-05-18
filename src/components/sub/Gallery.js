@@ -66,6 +66,12 @@ function Gallery() {
 			<Layout name={'Gallery'}>
 				<div className='intro'>
 					<h1>Le Impressio</h1>
+					<p>
+						Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+						accusantium
+						<br />
+						doloremque laudantium, totam rem aperiam, eaque ipsa quae.
+					</p>
 				</div>
 
 				{loading ? (

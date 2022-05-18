@@ -19,14 +19,14 @@ function Pics(props) {
 	return (
 		<>
 			<section id='pics' className='myScroll'>
-				<h2
+				{/* <h2
 					style={
 						position >= 0
 							? { transform: `translateX(${position / 1.2}px)` }
 							: null
 					}>
 					Gallery
-				</h2>
+				</h2> */}
 				<p
 					style={
 						position >= 0
@@ -37,7 +37,7 @@ function Pics(props) {
 							  }
 							: null
 					}>
-					current pictures
+					Current Pictures
 				</p>
 
 				<ul className='list'>
@@ -53,6 +53,7 @@ function Pics(props) {
 									<img
 										src={`https://live.staticflickr.com/${pic.server}/${pic.id}_${pic.secret}_m.jpg`}
 									/>
+									<h2>{pic.title}</h2>
 								</li>
 							);
 						}

@@ -1,6 +1,7 @@
 import { useSelector } from 'react-redux';
 import { useState, useRef } from 'react';
 import Popup from '../common/Popup';
+const path = process.env.PUBLIC_URL;
 
 function Vids() {
 	const vidData = useSelector((store) => store.youtubeReducer.youtube);
@@ -13,7 +14,8 @@ function Vids() {
 				<h2>Recent Youtube</h2>
 				<ul>
 					{vidData.map((vid, idx) => {
-						if (idx < 4) {
+						const tit = vid.snippet.title;
+						if (idx < 8) {
 							return (
 								<li
 									key={idx}
@@ -22,15 +24,12 @@ function Vids() {
 										pop.current.open();
 									}}>
 									<img src={vid.snippet.thumbnails.medium.url} />
+									<h2>{tit.length > 19 ? tit.substr(0, 19) + '...' : tit}</h2>
 								</li>
 							);
 						}
 					})}
 				</ul>
-				<div className='script'>
-					<h2>ddd</h2>
-					<p>ddddd</p>
-				</div>
 			</section>
 
 			<Popup ref={pop}>

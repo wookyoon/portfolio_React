@@ -119,195 +119,207 @@ function Join() {
 				</p>
 			</div>
 
-			<div className='contact'>
-				<div className='warp'>
-					<div>
-						<h1>JOIN OUR NEWSLETTER</h1>
-						<p>Class aptent taciti sociosqu ad litora torquent per</p>
+			<div className='video'>
+				<video src={`${path}/img/vid1.mp4`} loop autoPlay muted></video>
+				<h2>Being a Good Customer</h2>
+			</div>
+			<div className='wrap'>
+				<div className='contact'>
+					<div className='warp'>
+						<div>
+							<h1>JOIN OUR NEWSLETTER</h1>
+							<p>Class aptent taciti sociosqu ad litora torquent per</p>
 
-						<input id='email' type='text' placeholder='Email' name='email' />
-						<button>
-							<a href='#'>SUBSCRIBE NOW</a>
-						</button>
+							<input id='email' type='text' placeholder='Email' name='email' />
+							<button>
+								<a href='#'>SUBSCRIBE NOW</a>
+							</button>
+						</div>
 					</div>
 				</div>
+
+				<form onSubmit={handleSubmit}>
+					<fieldset>
+						<legend></legend>
+						<table border='0'>
+							<caption></caption>
+							<tbody>
+								{/* user id */}
+								<tr>
+									<th scope='row'>
+										<label htmlFor='userid'>USER ID</label>
+									</th>
+									<td>
+										<input
+											type='text'
+											id='userid'
+											name='userid'
+											placeholder='아이디를 입력하세요'
+											value={val.userid}
+											onChange={handleChange}
+										/>
+										<span className='err'>{err.userid}</span>
+									</td>
+								</tr>
+								{/* pwd1 */}
+								<tr>
+									<th scope='row'>
+										<label htmlFor='pwd1'>PASSWORD</label>
+									</th>
+									<td>
+										<input
+											type='password'
+											name='pwd1'
+											id='pwd1'
+											placeholder='비밀번호를 입력하세요'
+											value={val.pwd1}
+											onChange={handleChange}
+										/>
+										<span className='err'>{err.pwd1}</span>
+									</td>
+								</tr>
+								{/* pwd2 */}
+								<tr>
+									<th scope='row'>
+										<label htmlFor='pwd2'>RE-PASSWORD</label>
+									</th>
+									<td>
+										<input
+											type='password'
+											name='pwd2'
+											id='pwd2'
+											placeholder='비밀번호를 재입력하세요'
+											value={val.pwd2}
+											onChange={handleChange}
+										/>
+										<span className='err'>{err.pwd2}</span>
+									</td>
+								</tr>
+								{/* email */}
+								<tr>
+									<th scope='row'>
+										<label htmlFor='email'>E-MAIL</label>
+									</th>
+									<td>
+										<input
+											type='text'
+											id='email'
+											name='email'
+											placeholder='이메일주소를 입력하세요'
+											value={val.email}
+											onChange={handleChange}
+										/>
+										<span className='err'>{err.email}</span>
+									</td>
+								</tr>
+								{/* gender */}
+								<tr>
+									<th scope='row'>GENDER</th>
+									<td>
+										<label htmlFor='male'>Male&ensp;</label>
+										<input
+											type='radio'
+											id='male'
+											name='gender'
+											onChange={handleRadio}
+										/>
+										<label htmlFor='female'>&ensp;Female&ensp;</label>
+										<input
+											type='radio'
+											id='female'
+											name='gender'
+											onChange={handleRadio}
+										/>
+										<span className='err'>{err.gender}</span>
+									</td>
+								</tr>
+								{/* interests */}
+								<tr>
+									<th scope='row'>INTERESTS</th>
+									<td>
+										<label htmlFor='sports'>Sports&ensp;</label>
+										<input
+											type='checkbox'
+											name='interests'
+											id='sports'
+											onChange={handleCheck}
+										/>
+										<label htmlFor='game'>&ensp;Game&ensp;</label>
+										<input
+											type='checkbox'
+											name='interests'
+											id='game'
+											onChange={handleCheck}
+										/>
+										<label htmlFor='music'>&ensp;Music&ensp;</label>
+										<input
+											type='checkbox'
+											name='interests'
+											id='music'
+											onChange={handleCheck}
+										/>
+										<span className='err'>{err.interests}</span>
+									</td>
+								</tr>
+
+								{/* edu */}
+								<tr>
+									<th>
+										<label htmlFor='edu'>EDUCATION</label>
+									</th>
+									<td>
+										<select name='edu' id='eud' onChange={handleSelect}>
+											<option value=''>학력을 선택하세요</option>
+											<option value='elementary-school'>초등학교 졸업</option>
+											<option value='middle-school'>중학교 졸업</option>
+											<option value='high-school'>고등학교 졸업</option>
+											<option value='college'>대학교 졸업</option>
+										</select>
+										<span className='err'>{err.edu}</span>
+									</td>
+								</tr>
+
+								{/* comments */}
+								<tr>
+									<th scope='row'>
+										<label htmlFor='comments'>COMMENTS</label>
+									</th>
+									<td>
+										<textarea
+											name='comments'
+											id='comments'
+											cols='30'
+											rows='5'
+											value={val.comments}
+											onChange={handleChange}></textarea>
+										<span className='err'>{err.commetns}</span>
+									</td>
+								</tr>
+								{/* button set */}
+								<tr>
+									<th colSpan='2'>
+										<input
+											id='cancel'
+											type='reset'
+											value='CANCEL'
+											onClick={handleReset}
+										/>
+										<input
+											id='submit'
+											type='submit'
+											value='SEND'
+											onClick={() => setIsSubmit(true)}
+										/>
+									</th>
+								</tr>
+							</tbody>
+						</table>
+						<div className='pic'>
+							<img src='{process.env.PUBLIC_URL/img/join.jpg}' alt='' />
+						</div>
+					</fieldset>
+				</form>
 			</div>
-
-			<form onSubmit={handleSubmit}>
-				<fieldset>
-					<legend></legend>
-					<table border='0'>
-						<caption></caption>
-						<tbody>
-							{/* user id */}
-							<tr>
-								<th scope='row'>
-									<label htmlFor='userid'>USER ID</label>
-								</th>
-								<td>
-									<input
-										type='text'
-										id='userid'
-										name='userid'
-										placeholder='아이디를 입력하세요'
-										value={val.userid}
-										onChange={handleChange}
-									/>
-									<span className='err'>{err.userid}</span>
-								</td>
-							</tr>
-							{/* pwd1 */}
-							<tr>
-								<th scope='row'>
-									<label htmlFor='pwd1'>PASSWORD</label>
-								</th>
-								<td>
-									<input
-										type='password'
-										name='pwd1'
-										id='pwd1'
-										placeholder='비밀번호를 입력하세요'
-										value={val.pwd1}
-										onChange={handleChange}
-									/>
-									<span className='err'>{err.pwd1}</span>
-								</td>
-							</tr>
-							{/* pwd2 */}
-							<tr>
-								<th scope='row'>
-									<label htmlFor='pwd2'>RE-PASSWORD</label>
-								</th>
-								<td>
-									<input
-										type='password'
-										name='pwd2'
-										id='pwd2'
-										placeholder='비밀번호를 재입력하세요'
-										value={val.pwd2}
-										onChange={handleChange}
-									/>
-									<span className='err'>{err.pwd2}</span>
-								</td>
-							</tr>
-							{/* email */}
-							<tr>
-								<th scope='row'>
-									<label htmlFor='email'>E-MAIL</label>
-								</th>
-								<td>
-									<input
-										type='text'
-										id='email'
-										name='email'
-										placeholder='이메일주소를 입력하세요'
-										value={val.email}
-										onChange={handleChange}
-									/>
-									<span className='err'>{err.email}</span>
-								</td>
-							</tr>
-							{/* gender */}
-							<tr>
-								<th scope='row'>GENDER</th>
-								<td>
-									<label htmlFor='male'>Male</label>
-									<input
-										type='radio'
-										id='male'
-										name='gender'
-										onChange={handleRadio}
-									/>
-									<label htmlFor='female'>Female</label>
-									<input
-										type='radio'
-										id='female'
-										name='gender'
-										onChange={handleRadio}
-									/>
-									<span className='err'>{err.gender}</span>
-								</td>
-							</tr>
-							{/* interests */}
-							<tr>
-								<th scope='row'>INTERESTS</th>
-								<td>
-									<label htmlFor='sports'>Sports</label>
-									<input
-										type='checkbox'
-										name='interests'
-										id='sports'
-										onChange={handleCheck}
-									/>
-									<label htmlFor='game'>Game</label>
-									<input
-										type='checkbox'
-										name='interests'
-										id='game'
-										onChange={handleCheck}
-									/>
-									<label htmlFor='music'>Music</label>
-									<input
-										type='checkbox'
-										name='interests'
-										id='music'
-										onChange={handleCheck}
-									/>
-									<span className='err'>{err.interests}</span>
-								</td>
-							</tr>
-
-							{/* edu */}
-							<tr>
-								<th>
-									<label htmlFor='edu'>EDUCATION</label>
-								</th>
-								<td>
-									<select name='edu' id='eud' onChange={handleSelect}>
-										<option value=''>학력을 선택하세요</option>
-										<option value='elementary-school'>초등학교 졸업</option>
-										<option value='middle-school'>중학교 졸업</option>
-										<option value='high-school'>고등학교 졸업</option>
-										<option value='college'>대학교 졸업</option>
-									</select>
-									<span className='err'>{err.edu}</span>
-								</td>
-							</tr>
-
-							{/* comments */}
-							<tr>
-								<th scope='row'>
-									<label htmlFor='comments'>COMMENTS</label>
-								</th>
-								<td>
-									<textarea
-										name='comments'
-										id='comments'
-										cols='30'
-										rows='10'
-										value={val.comments}
-										onChange={handleChange}></textarea>
-									<span className='err'>{err.commetns}</span>
-								</td>
-							</tr>
-							{/* button set */}
-							<tr>
-								<th colSpan='2'>
-									<input type='reset' value='CANCEL' onClick={handleReset} />
-									<input
-										type='submit'
-										value='SEND'
-										onClick={() => setIsSubmit(true)}
-									/>
-								</th>
-							</tr>
-						</tbody>
-					</table>
-					<div className='pic'>
-						<img src='{process.env.PUBLIC_URL/img/join.jpg}' alt='' />
-					</div>
-				</fieldset>
-			</form>
 		</Layout>
 	);
 }

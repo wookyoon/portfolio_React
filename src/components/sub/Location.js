@@ -129,6 +129,42 @@ function Location() {
 					</div>
 				</div>
 			</div>
+
+			<div className='address'>
+				<div className='wrap'>
+					<div className='left'>
+						<h2>Los Angeles</h2>
+						<p>
+							22 East 41/B Street, New York,
+							<br />
+							Los Angeles, CA 92301, USA
+						</p>
+						<h3>+22 1234 5678 5411</h3>
+						<a href='#'>infoLA@kookle.com</a>
+					</div>
+					<div className='middle'>
+						<h2>San Francisco</h2>
+						<p>
+							22 East 41/B Street,
+							<br />
+							San Francisco, CA 92301, USA
+						</p>
+						<h3>+22 1234 5678 5411</h3>
+						<a href='#'>infoSA@kookle.com</a>
+					</div>
+					<div className='right'>
+						<h2>New York</h2>
+						<p>
+							22 East 41/B Street,
+							<br />
+							New York, CA 92301, USA
+						</p>
+						<h3>+22 1234 5678 5411</h3>
+						<a href='#'>infoNY@kookle.com</a>
+					</div>
+				</div>
+			</div>
+
 			<div id='map' ref={container}></div>
 
 			<button id='traffic' onClick={() => setTraffic(!traffic)}>
