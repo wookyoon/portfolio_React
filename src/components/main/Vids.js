@@ -24,7 +24,7 @@ function Vids() {
 										pop.current.open();
 									}}>
 									<img src={vid.snippet.thumbnails.medium.url} />
-									<h2>{tit.length > 19 ? tit.substr(0, 19) + '...' : tit}</h2>
+									<h2>{tit.length > 40 ? tit.substr(0, 40) + '...' : tit}</h2>
 								</li>
 							);
 						}

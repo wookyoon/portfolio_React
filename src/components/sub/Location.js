@@ -11,23 +11,23 @@ function Location() {
 		{
 			title: '여의도 본점',
 			latlng: new kakao.maps.LatLng(37.51899420651927, 126.93060759503608),
-			imgSrc: `${path}/img/marker1.png`,
-			imgSize: new kakao.maps.Size(60, 50),
-			imgPos: { offset: new kakao.maps.Point(50, 60) },
+			imgSrc: `${path}/img/mark.png`,
+			imgSize: new kakao.maps.Size(60, 80),
+			imgPos: { offset: new kakao.maps.Point(40, 60) },
 		},
 		{
 			title: '상수동 2호점',
 			latlng: new kakao.maps.LatLng(37.54879459319977, 126.91637232925349),
-			imgSrc: `${path}/img/marker2.png`,
-			imgSize: new kakao.maps.Size(60, 50),
-			imgPos: { offset: new kakao.maps.Point(50, 60) },
+			imgSrc: `${path}/img/mark.png`,
+			imgSize: new kakao.maps.Size(60, 80),
+			imgPos: { offset: new kakao.maps.Point(40, 60) },
 		},
 		{
 			title: '이태원 1호점',
 			latlng: new kakao.maps.LatLng(37.535029701736484, 126.99313225043191),
-			imgSrc: `${path}/img/marker3.png`,
-			imgSize: new kakao.maps.Size(60, 50),
-			imgPos: { offset: new kakao.maps.Point(50, 60) },
+			imgSrc: `${path}/img/mark.png`,
+			imgSize: new kakao.maps.Size(60, 80),
+			imgPos: { offset: new kakao.maps.Point(40, 60) },
 		},
 	];
 
@@ -115,20 +115,46 @@ function Location() {
 
 	return (
 		<Layout name={'Location'}>
-			<div className='contact'>
-				<div className='warp'>
-					<div className='news'>
-						<h1>CONTACT US</h1>
-						<p>Class aptent taciti sociosqu ad litora torquent per</p>
-					</div>
-					<div className='newsForm'>
-						<input id='email' type='text' placeholder='Email' name='email' />
-						<button>
-							<a href='#'>SUBSCRIBE NOW</a>
-						</button>
-					</div>
-				</div>
+			<div className='title'>
+				<h1>GET IN TOUCH</h1>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+					<br />
+					sed do eiusmod tempor incididunt ut labore.
+				</p>
 			</div>
+
+			<div id='map' ref={container}></div>
+
+			<button id='traffic' onClick={() => setTraffic(!traffic)}>
+				{traffic ? 'Traffic OFF' : 'Traffic ON'}
+			</button>
+
+			{/* 버튼 클릭시 map스테이트에 담겨있는 인스턴스의 addOverlayMap함수 호출 */}
+			{/* <button
+				onClick={() => {
+					map.addOverlayMapTypeId(kakao.maps.MapTypeId.TRAFFIC);
+				}}>
+				Traffic ON
+			</button>
+			<button
+				onClick={() => {
+					map.removeOverlayMapTypeId(kakao.maps.MapTypeId.TRAFFIC);
+				}}>
+				Traffic OFF
+			</button> */}
+			<ul className='branch' ref={branch}>
+				{mapInfo.map((item, idx) => {
+					return (
+						<li key={idx} onClick={() => setIndex(idx)}>
+							{item.title}
+						</li>
+					);
+				})}
+				{/* <li onClick={() => setIndex(0)}>삼성동 코엑스</li>
+				<li onClick={() => setIndex(1)}>압구정 로데오</li>
+				<li onClick={() => setIndex(2)}>이태원 프리덤</li> */}
+			</ul>
 
 			<div className='address'>
 				<div className='wrap'>
@@ -165,37 +191,20 @@ function Location() {
 				</div>
 			</div>
 
-			<div id='map' ref={container}></div>
-
-			<button id='traffic' onClick={() => setTraffic(!traffic)}>
-				{traffic ? 'Traffic OFF' : 'Traffic ON'}
-			</button>
-
-			{/* 버튼 클릭시 map스테이트에 담겨있는 인스턴스의 addOverlayMap함수 호출 */}
-			{/* <button
-				onClick={() => {
-					map.addOverlayMapTypeId(kakao.maps.MapTypeId.TRAFFIC);
-				}}>
-				Traffic ON
-			</button>
-			<button
-				onClick={() => {
-					map.removeOverlayMapTypeId(kakao.maps.MapTypeId.TRAFFIC);
-				}}>
-				Traffic OFF
-			</button> */}
-			<ul className='branch' ref={branch}>
-				{mapInfo.map((item, idx) => {
-					return (
-						<li key={idx} onClick={() => setIndex(idx)}>
-							{item.title}
-						</li>
-					);
-				})}
-				{/* <li onClick={() => setIndex(0)}>삼성동 코엑스</li>
-				<li onClick={() => setIndex(1)}>압구정 로데오</li>
-				<li onClick={() => setIndex(2)}>이태원 프리덤</li> */}
-			</ul>
+			<div className='contact'>
+				<div className='warp'>
+					<div className='news'>
+						<h1>CONTACT US</h1>
+						<p>Class aptent taciti sociosqu ad litora torquent per</p>
+					</div>
+					<div className='newsForm'>
+						<input id='email' type='text' placeholder='Email' name='email' />
+						<button>
+							<a href='#'>SUBSCRIBE NOW</a>
+						</button>
+					</div>
+				</div>
+			</div>
 		</Layout>
 	);
 }

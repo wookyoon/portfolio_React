@@ -16,7 +16,7 @@ function Department() {
 	return (
 		<Layout name={'Department'}>
 			<div className='title'>
-				<h1>CEO's Desk</h1>
+				<h1>CEO's DESK</h1>
 			</div>
 			<section className='intro'>
 				<div className='wrap'>
@@ -39,7 +39,7 @@ function Department() {
 				</div>
 			</section>
 			<div className='summary'>
-				<h1>Our Experts</h1>
+				<h1>OUR EXPERTS</h1>
 				<p>
 					Suspendisse rutrum nibh urna, nec sodales enim sollicitudin sed.
 					Vivamus <br /> malesuada libero quis quam faucibus ac condimentum.

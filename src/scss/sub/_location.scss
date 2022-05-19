@@ -4,50 +4,141 @@
 		background-size: cover;
 		background-position: center;
 	}
+	.title {
+		text-align: center;
+		margin-bottom: 200px;
+		h1 {
+			font: 50px/1 'lato';
+			color: #c9ab81;
+			letter-spacing: 4px;
+		}
+		p {
+			font: 20px/1 'oswald';
+			color: #999;
+			letter-spacing: 2px;
+		}
+	}
+
+	#map {
+		width: 100%;
+		height: 400px;
+		background: #000;
+		filter: saturate(0.2);
+		position: relative;
+	}
+
+	#traffic {
+		width: 80px;
+		height: 26px;
+		margin-top: 5px;
+		background-color: #000;
+		border: 1px solid #c9ab81;
+		font: 15px/1 'oswald';
+		letter-spacing: 1px;
+		color: #c9ab81;
+		cursor: pointer;
+	}
+
+	.branch {
+		li {
+			float: right;
+			display: block;
+			width: 100px;
+			height: 26px;
+			margin-right: 5px;
+			border: 1px solid #c9ab81;
+			text-align: center;
+			color: #c9ab81;
+			font: 14px/1.5 'oswald';
+			cursor: pointer;
+			&.on {
+				color: #000;
+				background-color: #c9ab81;
+			}
+		}
+	}
+
+	.address {
+		width: 100%;
+		margin-top: 200px;
+		.wrap {
+			width: 1180px;
+			height: 350px;
+			display: flex;
+			justify-content: space-around;
+			h2 {
+				font: 20px/1 'oswald';
+				color: #c9ab81;
+				letter-spacing: 2px;
+				margin-bottom: 20px;
+			}
+			p {
+				font: 15px/2 'oswald';
+				color: #999;
+				margin-bottom: 20px;
+			}
+			h3 {
+				font: 15px/1 'oswald';
+				color: #999;
+				margin-bottom: 20px;
+			}
+			a {
+				font: 15px/1 'oswald';
+				color: #c9ab81;
+			}
+			a:hover {
+				text-shadow: 2px 1px 10px #c9ab81;
+			}
+		}
+	}
+
 	.contact {
 		width: 100%;
+		margin-top: 100px;
 		margin-bottom: 100px;
+		padding-left: 3.333%;
+
 		.warp {
 			width: 1180px;
 			height: 200px;
 			.news {
 				float: left;
-				width: 590px;
+				width: 50%;
 				h1 {
-					font: 60px/1 'oswald';
+					font: 50px/1 'oswald';
 					color: #c9ab81;
 					letter-spacing: 10px;
 					float: left;
 					height: 30px;
 				}
 				p {
-					font: 25px/1 'oswald';
+					font: 20px/1 'oswald';
 					color: #999;
 					float: left;
 				}
 			}
 			.newsForm {
 				float: left;
-				width: 590px;
+				width: 50%;
 
 				#email {
 					width: 500px;
-					height: 50px;
+					height: 40px;
 					float: left;
 					background-color: #555;
 					border: none;
-					font: 20px/1 'lato';
+					font: 16px/1 'lato';
 					color: #c9ab81;
 					text-indent: 1em;
 					margin-bottom: 20px;
 				}
 				button {
 					width: 500px;
-					height: 50px;
+					height: 40px;
 					float: left;
 					background-color: #c9a067;
 					border: none;
-					font: bold 20px/1 'lato';
+					font: bold 16px/1 'lato';
 
 					a {
 						color: #000;
@@ -61,78 +152,6 @@
 					content: ' ';
 					clear: both;
 				}
-			}
-		}
-	}
-
-	.address {
-		width: 100%;
-		.wrap {
-			width: 1180px;
-			height: 350px;
-			display: flex;
-			justify-content: space-around;
-			h2 {
-				font: 30px/1 'oswald';
-				color: #c9ab81;
-				letter-spacing: 10px;
-				margin-bottom: 20px;
-			}
-			p {
-				font: 25px/1.3 'oswald';
-				color: #999;
-				margin-bottom: 20px;
-			}
-			h3 {
-				font: 25px/1 'oswald';
-				color: #999;
-				margin-bottom: 20px;
-			}
-			a {
-				font: 25px/1 'oswald';
-				color: #c9ab81;
-			}
-			a:hover {
-				text-shadow: 2px 1px 5px #c9ab81;
-			}
-		}
-	}
-
-	#map {
-		width: 100%;
-		height: 400px;
-		background: #000;
-		filter: grayscale(0.2);
-		position: relative;
-	}
-
-	#traffic {
-		width: 100px;
-		height: 26px;
-		margin-top: 5px;
-		background-color: #000;
-		border: 1px solid #c9ab81;
-		font: 16px/1 'oswald';
-		letter-spacing: 1px;
-		color: #c9ab81;
-		cursor: pointer;
-	}
-
-	.branch {
-		li {
-			float: right;
-			display: block;
-			width: 120px;
-			height: 26px;
-			margin-right: 5px;
-			border: 1px solid #c9ab81;
-			text-align: center;
-			color: #c9ab81;
-			font: 15px/1.5 'oswald';
-			cursor: pointer;
-			&.on {
-				color: #000;
-				background-color: #c9ab81;
 			}
 		}
 	}

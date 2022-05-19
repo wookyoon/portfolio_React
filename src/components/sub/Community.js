@@ -96,7 +96,7 @@ function Community() {
 	return (
 		<Layout name={'Community'}>
 			<div className='title'>
-				<h1>OUR STORY</h1>
+				<h1>AUDIENCE OPINION</h1>
 				<p>
 					Suspendisse rutrum nibh urna, nec sodales enim sollicitudin sed.
 					Vivamus <br />
@@ -105,13 +105,19 @@ function Community() {
 			</div>
 
 			<div className='inputBox'>
-				<input type='text' placeholder='제목을 입력하세요' ref={input} />
+				<input
+					type='text'
+					placeholder='  Please, leave a title'
+					ref={input}
+					className='memo'
+				/>
 				<br />
 				<textarea
 					ref={textarea}
 					cols='30'
 					rows='10'
-					placeholder='본문을 입력하세요'></textarea>
+					placeholder='  Please leave a message'
+					className='memo'></textarea>
 				<br />
 
 				<button onClick={resetPost}>cancel</button>
@@ -162,6 +168,21 @@ function Community() {
 						</article>
 					);
 				})}
+			</div>
+
+			<div className='contact'>
+				<div className='warp'>
+					<div className='news'>
+						<h1>CONTACT US</h1>
+						<p>Class aptent taciti sociosqu ad litora torquent per</p>
+					</div>
+					<div className='newsForm'>
+						<input id='email' type='text' placeholder='Email' name='email' />
+						<button>
+							<a href='#'>SUBSCRIBE NOW</a>
+						</button>
+					</div>
+				</div>
 			</div>
 		</Layout>
 	);

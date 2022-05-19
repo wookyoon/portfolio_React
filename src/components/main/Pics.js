@@ -27,7 +27,7 @@ function Pics(props) {
 					}>
 					Gallery
 				</h2> */}
-				<p
+				{/* <p
 					style={
 						position >= 0
 							? {
@@ -36,13 +36,12 @@ function Pics(props) {
 									})`,
 							  }
 							: null
-					}>
-					Current Pictures
-				</p>
+					}> */}
+				<p>Current Pictures</p>
 
 				<ul className='list'>
 					{pics.map((pic, idx) => {
-						if (idx < 9) {
+						if (idx < 10) {
 							return (
 								<li
 									key={idx}

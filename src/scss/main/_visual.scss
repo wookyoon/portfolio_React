@@ -6,7 +6,7 @@ figure {
 	overflow: hidden;
 	position: relative;
 	background-color: #000;
-	filter: grayscale(0.5);
+	filter: grayscale(0.6);
 	img {
 		width: 100%;
 		object-fit: cover;
@@ -23,7 +23,7 @@ figure {
 			align-items: center;
 			font: bold 50px/1 'arial';
 			color: #fff;
-			transform: scale(0.8);
+			transform: scale(1);
 			transition: 1s;
 		}
 		.swiper-slide::before {
@@ -44,6 +44,7 @@ figure {
 
 		.swiper-button-prev {
 			color: #c9ab81;
+			opacity: 0;
 		}
 		// :hover {
 		// 	color: red;
@@ -51,9 +52,7 @@ figure {
 
 		.swiper-button-next {
 			color: #c9ab81;
-		}
-		:hover {
-			color: #fff;
+			opacity: 0;
 		}
 
 		.swiper-pagination {
@@ -81,33 +80,35 @@ figure {
 		transform: translate(-50%, -50%);
 		text-align: center;
 		h1 {
-			font-size: 40px;
-			margin-bottom: 30px;
-			letter-spacing: 1px;
-			text-shadow: 3px 3px #000;
+			font-size: 36px;
+			margin-bottom: 50px;
+			letter-spacing: 3px;
+			text-shadow: 2px 2px #000;
 			font-family: oswald;
 			color: #d8a35a;
 		}
 		h2 {
-			font-size: 100px;
-			margin-bottom: 50px;
-			letter-spacing: 1px;
-			text-shadow: 3px 3px #000;
+			font-size: 80px;
+			margin-bottom: 60px;
+			letter-spacing: 3px;
+			text-shadow: 2px 2px #000;
 			font-family: libre bodoni;
 			color: #d49946;
 		}
 		div {
 			a {
-				font-size: 30px;
+				font-size: 20px;
 				letter-spacing: 2px;
-				color: #fff;
+				color: #ae8854;
 				padding: 5px 15px;
-				background-color: #c9ab8175;
-				font-family: koulen;
+				border: 1px solid #ae8854;
+				background-color: rgba(0, 0, 0, 0.6);
+				font-family: oswald;
 			}
 			:hover {
-				background-color: rgba(0, 0, 0, 0.4);
+				background-color: rgba(0, 0, 0, 0.8);
 				color: #e1a95a;
+				text-shadow: 1px 1px 3px #ae8854;
 			}
 		}
 	}

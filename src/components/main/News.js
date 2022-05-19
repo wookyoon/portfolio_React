@@ -1,4 +1,9 @@
-import { useState, useEffect } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { Autoplay } from 'swiper';
 const path = process.env.PUBLIC_URL;
 
 function News() {
@@ -28,8 +33,32 @@ function News() {
 	return (
 		<section id='news'>
 			<h1>Recent News</h1>
+
 			<div className='pic'>
-				<img src={`${path}/img/j1.jpg`} alt='' />
+				{/* <img src={`${path}/img/j1.jpg`} alt='' /> */}
+				<Swiper
+					spaceBetween={30}
+					centeredSlides={true}
+					autoplay={{
+						delay: 1000,
+						disableOnInteraction: false,
+					}}
+					pagination={{
+						clickable: true,
+					}}
+					navigation={true}
+					modules={[Autoplay]}
+					className='mySwiper'>
+					<SwiperSlide>
+						<img src={`${path}/img/j1.jpg`} alt='' />
+					</SwiperSlide>
+					<SwiperSlide>
+						<img src={`${path}/img/j2.jpg`} alt='' />
+					</SwiperSlide>
+					<SwiperSlide>
+						<img src={`${path}/img/j3.jpg`} alt='' />
+					</SwiperSlide>
+				</Swiper>
 			</div>
 			<div>
 				{/* posts값 중에서 최근글 3개까지만 화면에 출력 */}

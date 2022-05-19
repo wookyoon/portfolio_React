@@ -110,7 +110,7 @@ function Join() {
 			{success ? <h2>회원가입을 축하합니다.</h2> : null}
 
 			<div className='title'>
-				<h1>What Does It Mean To Be a Man?</h1>
+				<h1>DINERS CLUB</h1>
 				<p>
 					Sed ut perspiciatis unde omnis iste natus error sit voluptatem
 					accusantium
@@ -120,8 +120,8 @@ function Join() {
 			</div>
 
 			<div className='video'>
-				<video src={`${path}/img/vid1.mp4`} loop autoPlay muted></video>
-				<h2>Being a Good Customer</h2>
+				<video src={`${path}/img/vid5.mp4`} loop autoPlay muted></video>
+				<h2>Being The Member</h2>
 			</div>
 			<div className='wrap'>
 				<div className='contact'>
@@ -319,6 +319,35 @@ function Join() {
 						</div>
 					</fieldset>
 				</form>
+			</div>
+
+			<div className='address'>
+				<div className='wrap'>
+					<div className='left'>
+						<h2>CONTACT US</h2>
+						<a href='#'>00 1234 5678 5411</a>
+						<br />
+						<a href='#'>+22 1234 5678 5411</a>
+					</div>
+					<div className='middle'>
+						<h2>ADDRESS</h2>
+						<a href='#'>22 East 41/B Street,</a>
+						<br />
+						<a href='#'> San Francisco, CA 92301, USA</a>
+					</div>
+					<div className='right'>
+						<h2>EMAIL</h2>
+						<a href='#'>infoNY@kookle.com</a>
+						<br />
+						<a href='#'>infoSA@kookle.com</a>
+					</div>
+					<div className='end'>
+						<h2>FOLLOW US</h2>
+						<a href='#'>Instagram</a>
+						<br />
+						<a href='#'>Facebook</a>
+					</div>
+				</div>
 			</div>
 		</Layout>
 	);

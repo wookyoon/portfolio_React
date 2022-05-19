@@ -6,13 +6,13 @@
 	}
 	.intro {
 		text-align: center;
-		margin-bottom: 100px;
+		margin-bottom: 150px;
 		h1 {
-			font: 64px/1 'lato';
+			font: 50px/1 'lato';
 			color: #c9ab81;
 		}
 		p {
-			font: 25px/1 'oswald';
+			font: 20px/1 'oswald';
 			color: #999;
 			margin-bottom: 20px;
 		}
@@ -26,19 +26,20 @@
 	}
 	button {
 		background-color: #000;
-		font: 36px/2 'oswald';
+		font: 30px/2 'oswald';
 		color: #fff;
 		letter-spacing: 2px;
 		cursor: pointer;
 	}
 	button:hover {
 		color: #c9ab81;
+		text-shadow: 1px 1px 10px #c9ab81;
 	}
 	.searchBox {
 		float: right;
 		input {
 			width: 300px;
-			height: 40px;
+			height: 30px;
 			border: 1px solid #000;
 			background-color: #222;
 			margin-right: 20px;
@@ -95,7 +96,7 @@
 
 				h2 {
 					text-align: left;
-					font: normal 30px/1.2 'koulen';
+					font: normal 26px/1.2 'koulen';
 					color: #c9ab81;
 					margin-bottom: 20px;
 					word-wrap: break-word;
@@ -113,13 +114,14 @@
 						height: 40px;
 					}
 					span {
-						font: 20px/1 'oswald';
+						font: 15px/1 'oswald';
 						color: #999;
 						margin-left: 10px;
 						cursor: pointer;
 
 						&:hover {
 							color: #c9ab81;
+							text-shadow: 1px 1px 5px #c9ab81;
 						}
 					}
 				}
@@ -129,7 +131,8 @@
 	.contact {
 		width: 100%;
 		text-align: center;
-		margin-top: 120px;
+		margin-top: 200px;
+		margin-bottom: 200px;
 		background-color: #111;
 
 		.warp {
@@ -139,24 +142,24 @@
 			margin: 0 auto;
 
 			h1 {
-				font: 48px/1 'oswald';
+				font: 40px/1 'oswald';
 				color: #c9ab81;
 				letter-spacing: 2px;
-
 				height: 30px;
 			}
 			p {
-				font: 25px/1 'oswald';
+				font: 20px/1 'oswald';
 				color: #999;
-				margin-bottom: 20px;
+				letter-spacing: 2px;
+				margin-bottom: 30px;
 			}
 
 			#email {
 				width: 450px;
-				height: 50px;
+				height: 40px;
 				background-color: #333;
 				border: none;
-				font: 20px/1 'lato';
+				font: 16px/1 'lato';
 				color: #c9ab81;
 				text-indent: 1em;
 				margin-bottom: 20px;
@@ -164,10 +167,10 @@
 
 			button {
 				width: 450px;
-				height: 50px;
+				height: 40px;
 				background-color: #c9a067;
 				border: none;
-				font: bold 20px/1 'lato';
+				font: bold 16px/1 'lato';
 				transition: 0.5s;
 
 				a {

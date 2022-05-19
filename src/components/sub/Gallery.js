@@ -65,7 +65,7 @@ function Gallery() {
 		<>
 			<Layout name={'Gallery'}>
 				<div className='intro'>
-					<h1>Le Impressio</h1>
+					<h1>THROW BACK</h1>
 					<p>
 						Sed ut perspiciatis unde omnis iste natus error sit voluptatem
 						accusantium

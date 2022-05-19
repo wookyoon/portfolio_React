@@ -12,7 +12,7 @@ function Youtube() {
 		<>
 			<Layout name={'Youtube'}>
 				<div className='title'>
-					<h1>Das Homme</h1>
+					<h1>EXCULSIVE VIDEO</h1>
 					<p>
 						Sed ut perspiciatis unde omnis iste natus error sit voluptatem
 						accusantium
@@ -35,8 +35,8 @@ function Youtube() {
 							<div className='pic'>
 								<img src={vid.snippet.thumbnails.standard.url} />
 							</div>
-							<h2>{tit.length > 19 ? tit.substr(0, 19) + '...' : tit}</h2>
-							<p>{desc.length > 120 ? desc.substr(0, 120) + '...' : desc}</p>
+							<h2>{tit.length > 33 ? tit.substr(0, 33) + '...' : tit}</h2>
+							<p>{desc.length > 141 ? desc.substr(0, 141) + '...' : desc}</p>
 							<span>{date.split('T')[0]}</span>
 						</article>
 					);
