@@ -5,6 +5,7 @@
 	text-align: center;
 	background: #000;
 	overflow: hidden;
+	position: relative;
 
 	// h2 {
 	// 	font: bold 60px/1 'arial';
@@ -43,5 +44,25 @@
 				margin-bottom: 10px;
 			}
 		}
+	}
+	div {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 100px;
+		height: 36px;
+		border: 1px solid #c9ab81;
+		a {
+			text-align: center;
+			font: 18px/1.8 'oswald';
+			color: #c9ab81;
+			transition: 0.5s;
+		}
+	}
+	div:hover {
+		color: #c9ab81;
+		border-color: #c9ab81;
+		text-shadow: 1px 2px 10px #c9ab81;
 	}
 }

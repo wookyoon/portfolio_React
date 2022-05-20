@@ -58,6 +58,9 @@ function Pics(props) {
 						}
 					})}
 				</ul>
+				<div>
+					<a href='#'>VIEW MORE</a>
+				</div>
 			</section>
 
 			<Popup ref={pop}>
