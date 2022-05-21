@@ -13,7 +13,7 @@ function Visual() {
 				loop={true}
 				centeredSlides={true}
 				autoplay={{
-					delay: 1800,
+					delay: 2000,
 					disableOnInteraction: false,
 				}}
 				grabCursor={true}
@@ -24,17 +24,17 @@ function Visual() {
 				navigation={true}
 				modules={[Autoplay, Pagination, Navigation]}>
 				<SwiperSlide>
-					<img src={`${path}/img/main3.jpg`} alt='' />
+					<img src={`${path}/img/main_1.jpg`} alt='' />
 				</SwiperSlide>
 				<SwiperSlide>
-					<img src={`${path}/img/main4.jpg`} alt='' />
+					<img src={`${path}/img/main_2.jpg`} alt='' />
 				</SwiperSlide>
 				<SwiperSlide>
-					<img src={`${path}/img/main6.jpg`} alt='' />
+					<img src={`${path}/img/main_3.jpg`} alt='' />
 				</SwiperSlide>
 			</Swiper>
 			<div className='wrap'>
-				<h1>Gunt Urban Shop</h1>
+				<h1>Urban Luxury Style</h1>
 				<h2>TWO FOR TWO</h2>
 				<div>
 					<a href='#'>THE SHOP</a>

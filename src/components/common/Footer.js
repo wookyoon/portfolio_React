@@ -78,6 +78,21 @@ function Footer() {
 						</li>
 					</ul>
 				</div>
+				<div className='middle_0'>
+					<h6>NAVIGATION</h6>
+					<ul>
+						<li>
+							427 Ward Divide Suite 421,
+							<br />
+							New York, New York, USA
+						</li>
+						<li>rilint@example.com</li>
+						<li>T / (800) 412 2698</li>
+						<li>
+							<a href='https://www.google.com/'>www.google.com</a>
+						</li>
+					</ul>
+				</div>
 				<div className='middle'>
 					<h6>CONTACT</h6>
 					<ul>

@@ -41,7 +41,7 @@ function Pics(props) {
 
 				<ul className='list'>
 					{pics.map((pic, idx) => {
-						if (idx < 10) {
+						if (idx < 12) {
 							return (
 								<li
 									key={idx}
@@ -58,9 +58,7 @@ function Pics(props) {
 						}
 					})}
 				</ul>
-				<div>
-					<a href='#'>VIEW MORE</a>
-				</div>
+				<a href='#'>VIEW MORE</a>
 			</section>
 
 			<Popup ref={pop}>

@@ -11,11 +11,11 @@ function Vids() {
 	return (
 		<>
 			<section id='vids' className='myScroll'>
-				<h2>Recent Youtube</h2>
+				<h1>Recent Youtube</h1>
 				<ul>
 					{vidData.map((vid, idx) => {
 						const tit = vid.snippet.title;
-						if (idx < 8) {
+						if (idx < 9) {
 							return (
 								<li
 									key={idx}
@@ -30,9 +30,7 @@ function Vids() {
 						}
 					})}
 				</ul>
-				<div>
-					<a href='#'>VIEW MORE</a>
-				</div>
+				<a href='#'>VIEW MORE</a>
 			</section>
 
 			<Popup ref={pop}>

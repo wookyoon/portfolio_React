@@ -34,44 +34,47 @@ function News() {
 		<section id='news'>
 			<h1>Recent News</h1>
 
-			<div className='pic'>
-				{/* <img src={`${path}/img/j1.jpg`} alt='' /> */}
-				<Swiper
-					spaceBetween={30}
-					centeredSlides={true}
-					autoplay={{
-						delay: 1000,
-						disableOnInteraction: false,
-					}}
-					pagination={{
-						clickable: true,
-					}}
-					navigation={true}
-					modules={[Autoplay]}
-					className='mySwiper'>
-					<SwiperSlide>
-						<img src={`${path}/img/j1.jpg`} alt='' />
-					</SwiperSlide>
-					<SwiperSlide>
-						<img src={`${path}/img/j2.jpg`} alt='' />
-					</SwiperSlide>
-					<SwiperSlide>
-						<img src={`${path}/img/j3.jpg`} alt='' />
-					</SwiperSlide>
-				</Swiper>
-			</div>
-			<div>
-				{/* posts값 중에서 최근글 3개까지만 화면에 출력 */}
-				{posts.map((post, idx) => {
-					if (idx < 5) {
-						return (
-							<li key={idx}>
-								<h2>{post.title}</h2>
-								<p>{post.content}</p>
-							</li>
-						);
-					}
-				})}
+			<div className='wrap'>
+				<div className='pic'>
+					{/* <img src={`${path}/img/j1.jpg`} alt='' /> */}
+					<Swiper
+						spaceBetween={10}
+						loop={true}
+						centeredSlides={true}
+						autoplay={{
+							delay: 1000,
+							disableOnInteraction: false,
+						}}
+						pagination={{
+							clickable: true,
+						}}
+						navigation={true}
+						modules={[Autoplay]}
+						className='mySwiper'>
+						<SwiperSlide>
+							<img src={`${path}/img/j1.jpg`} alt='' />
+						</SwiperSlide>
+						<SwiperSlide>
+							<img src={`${path}/img/j2.jpg`} alt='' />
+						</SwiperSlide>
+						<SwiperSlide>
+							<img src={`${path}/img/j3.jpg`} alt='' />
+						</SwiperSlide>
+					</Swiper>
+				</div>
+				<div>
+					{/* posts값 중에서 최근글 3개까지만 화면에 출력 */}
+					{posts.map((post, idx) => {
+						if (idx < 5) {
+							return (
+								<li key={idx}>
+									<h2>{post.title}</h2>
+									<p>{post.content}</p>
+								</li>
+							);
+						}
+					})}
+				</div>
 			</div>
 		</section>
 	);
