@@ -32,6 +32,23 @@ function News() {
 	}, []);
 	return (
 		<section id='news'>
+			<div className='wrpper'>
+				<h1 id='title'>Welcome to Barberian Man</h1>
+				<h2>
+					Our Company always offers proffessional quality and we are ready to
+					deal with your highest expectations.
+				</h2>
+				<p>
+					Our Services are dedicated for your personal success. Here we have
+					award winning staff that have demonstrated talent of
+					<br /> master barbers at several notable styling competitions. Let our
+					barber to be your personal stylist
+					<br /> and you will never be disappointed.
+				</p>
+				<img src={`${path}/img/auto1.png`} alt='' />
+				<a href='#'>VIEW MORE</a>
+			</div>
+
 			<h1>Recent News</h1>
 
 			<div className='wrap'>

@@ -4,6 +4,54 @@
 	padding-top: 200px;
 	text-align: center;
 	background-color: #000;
+
+	.wrpper {
+		position: relative;
+		width: 100%;
+		margin-bottom: 200px;
+
+		#title {
+			font: 50px/1 'lato';
+			color: #c9ab81;
+			letter-spacing: 4px;
+			margin-bottom: 70px;
+		}
+		h2 {
+			font: 20px/1 'lato';
+			letter-spacing: 2px;
+			color: #c9ab81;
+			margin-bottom: 60px;
+		}
+		p {
+			font: 20px/2 'oswald';
+			letter-spacing: 3px;
+			color: #999;
+			margin-bottom: 80px;
+		}
+		img {
+			margin-bottom: 80px;
+		}
+		a {
+			position: absolute;
+			display: block;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 100px;
+			height: 36px;
+			background-color: #daa964;
+			border: 1px solid #daa964;
+			text-align: center;
+			font: 18px/1.8 'oswald';
+			color: #000;
+			transition: 0.5s;
+		}
+
+		a:hover {
+			color: #daa964;
+			background-color: #000;
+		}
+	}
+
 	h1 {
 		font: 50px/1 'lato';
 		color: #c9ab81;
