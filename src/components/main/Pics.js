@@ -1,22 +1,32 @@
 import { useSelector } from 'react-redux';
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import Popup from '../common/Popup';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function Pics() {
 	const pics = useSelector((store) => store.flickrReducer.flickr);
 	const [index, setIndex] = useState(0);
 	const pop = useRef(null);
 
+	useEffect(() => {
+		AOS.init();
+	});
 	return (
 		<>
 			<section id='pics' className='myScroll'>
-				<p>Current Pictures</p>
+				<p data-aos='fade-down' data-aos-duration='1000' data-aos-offset='300'>
+					Current Pictures
+				</p>
 
 				<ul className='list'>
 					{pics.map((pic, idx) => {
 						if (idx < 4) {
 							return (
 								<li
+									data-aos='flip-right'
+									data-aos-duration='1000'
+									data-aos-offset='300'
 									key={idx}
 									onClick={() => {
 										setIndex(idx);
@@ -31,7 +41,13 @@ function Pics() {
 						}
 					})}
 				</ul>
-				<a href='#'>VIEW MORE</a>
+				<a
+					href='#'
+					data-aos='zoom-in'
+					data-aos-duration='1000'
+					data-aos-offset='300'>
+					VIEW MORE
+				</a>
 			</section>
 
 			<Popup ref={pop}>

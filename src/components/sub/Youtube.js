@@ -1,13 +1,18 @@
 import Layout from '../common/Layout';
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import Popup from '../common/Popup';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function Youtube() {
 	const vidData = useSelector((store) => store.youtubeReducer.youtube);
 	const pop = useRef(null);
 	const [index, setIndex] = useState(0);
 
+	useEffect(() => {
+		AOS.init();
+	});
 	return (
 		<>
 			<Layout name={'Youtube'}>
@@ -32,7 +37,11 @@ function Youtube() {
 								pop.current.open();
 								setIndex(idx);
 							}}>
-							<div className='pic'>
+							<div
+								className='pic'
+								data-aos='flip-right'
+								data-aos-duration='1000'
+								data-aos-offset='500'>
 								<img src={vid.snippet.thumbnails.standard.url} />
 							</div>
 							<h2>{tit.length > 33 ? tit.substr(0, 33) + '...' : tit}</h2>

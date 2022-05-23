@@ -1,9 +1,12 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Autoplay } from 'swiper';
+
 const path = process.env.PUBLIC_URL;
 
 function News() {
@@ -30,29 +33,60 @@ function News() {
 	useEffect(() => {
 		localStorage.setItem('post', JSON.stringify(posts));
 	}, []);
+
+	useEffect(() => {
+		AOS.init();
+	});
 	return (
 		<section id='news'>
 			<div className='wrpper'>
-				<h1 id='title'>Welcome to Barberian Man</h1>
-				<h2>
+				<h1
+					id='title'
+					data-aos='fade-down'
+					data-aos-duration='1000'
+					data-aos-offset='300'>
+					Welcome to Barberian Man
+				</h1>
+				<h2
+					data-aos='fade-right'
+					data-aos-duration='1000'
+					data-aos-offset='300'>
 					Our Company always offers proffessional quality and we are ready to
 					deal with your highest expectations.
 				</h2>
-				<p>
+				<p data-aos='fade-left' data-aos-duration='1000' data-aos-offset='300'>
 					Our Services are dedicated for your personal success. Here we have
 					award winning staff that have demonstrated talent of
 					<br /> master barbers at several notable styling competitions. Let our
 					barber to be your personal stylist
 					<br /> and you will never be disappointed.
 				</p>
-				<img src={`${path}/img/auto1.png`} alt='' />
-				<a href='#'>VIEW MORE</a>
+				<img
+					data-aos='fade-up'
+					data-aos-duration='1000'
+					data-aos-offset='300'
+					src={`${path}/img/auto1.png`}
+					alt=''
+				/>
+				<a
+					href='#'
+					data-aos='zoom-in'
+					data-aos-duration='1000'
+					data-aos-offset='200'>
+					VIEW MORE
+				</a>
 			</div>
 
-			<h1>Recent News</h1>
+			<h1 data-aos='fade-down' data-aos-duration='1000' data-aos-offset='300'>
+				Recent News
+			</h1>
 
 			<div className='wrap'>
-				<div className='pic'>
+				<div
+					className='pic'
+					data-aos='flip-right'
+					data-aos-duration='1000'
+					data-aos-offset='300'>
 					{/* <img src={`${path}/img/j1.jpg`} alt='' /> */}
 					<Swiper
 						spaceBetween={10}
@@ -84,7 +118,11 @@ function News() {
 					{posts.map((post, idx) => {
 						if (idx < 5) {
 							return (
-								<li key={idx}>
+								<li
+									key={idx}
+									data-aos='flip-down'
+									data-aos-duration='1000'
+									data-aos-offset='300'>
 									<h2>{post.title}</h2>
 									<p>{post.content}</p>
 								</li>

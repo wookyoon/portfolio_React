@@ -1,7 +1,8 @@
 import { useSelector } from 'react-redux';
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import Popup from '../common/Popup';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
@@ -15,16 +16,24 @@ function Vids() {
 	const pop = useRef(null);
 	const [index, setIndex] = useState(0);
 
+	useEffect(() => {
+		AOS.init();
+	});
 	return (
 		<>
 			<section id='vids' className='myScroll'>
-				<h1>Recent Youtube</h1>
+				<h1 data-aos='fade-down' data-aos-duration='1000' data-aos-offset='300'>
+					Recent Youtube
+				</h1>
 				<ul>
 					{vidData.map((vid, idx) => {
 						const tit = vid.snippet.title;
 						if (idx < 3) {
 							return (
 								<li
+									data-aos='zoom-in'
+									data-aos-duration='1000'
+									data-aos-offset='300'
 									key={idx}
 									onClick={() => {
 										setIndex(idx);
@@ -37,13 +46,27 @@ function Vids() {
 						}
 					})}
 				</ul>
-				<a href='#'>VIEW MORE</a>
+				<a
+					href='#'
+					data-aos='zoom-in'
+					data-aos-duration='1000'
+					data-aos-offset='300'>
+					VIEW MORE
+				</a>
 
 				<div className='wrapper'>
-					<div className='pic'>
+					<div
+						className='pic'
+						data-aos='fade-right'
+						data-aos-duration='1000'
+						data-aos-offset='300'>
 						<img src={`${path}/img/main6.jpg`} alt='' />
 					</div>
-					<div className='content'>
+					<div
+						className='content'
+						data-aos='fade-left'
+						data-aos-duration='1000'
+						data-aos-offset='300'>
 						<h1>Place where professional</h1>
 						<p>
 							We are partners united by the desire to create
@@ -58,7 +81,11 @@ function Vids() {
 					</div>
 				</div>
 				<div className='fon'>
-					<div className='left'>
+					<div
+						className='left'
+						data-aos='flip-right'
+						data-aos-duration='1000'
+						data-aos-offset='300'>
 						<h2>
 							<FontAwesomeIcon icon={['fab', 'apple']} />
 						</h2>
@@ -72,7 +99,12 @@ function Vids() {
 							VIEW MORE
 						</a>
 					</div>
-					<div className='middle'>
+					<div
+						className='middle'
+						data-aos='flip-right'
+						data-aos-duration='1000'
+						data-aos-offset='300'
+						data-aos-delay='200'>
 						<h2>
 							<FontAwesomeIcon icon={['fab', 'microsoft']} />
 						</h2>
@@ -86,7 +118,12 @@ function Vids() {
 							VIEW MORE
 						</a>
 					</div>
-					<div className='right'>
+					<div
+						className='right'
+						data-aos='flip-right'
+						data-aos-duration='1000'
+						data-aos-offset='300'
+						data-aos-delay='400'>
 						<h2>
 							<FontAwesomeIcon icon={['fab', 'google']} />
 						</h2>

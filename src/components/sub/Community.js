@@ -1,5 +1,7 @@
 import Layout from '../common/Layout';
 import { useRef, useState, useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function Community() {
 	const input = useRef(null);
@@ -93,6 +95,9 @@ function Community() {
 		localStorage.setItem('post', JSON.stringify(posts));
 	}, [posts]);
 
+	useEffect(() => {
+		AOS.init();
+	});
 	return (
 		<Layout name={'Community'}>
 			<div className='title'>
@@ -127,7 +132,11 @@ function Community() {
 			<div className='showBox'>
 				{posts.map((post, idx) => {
 					return (
-						<article key={idx}>
+						<article
+							key={idx}
+							data-aos='flip-down'
+							data-aos-duration='1000'
+							data-aos-offset='500'>
 							{post.enableUpdate ? (
 								//수정모드
 								<>
