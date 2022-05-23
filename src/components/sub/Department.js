@@ -20,27 +20,15 @@ function Department() {
 	});
 	return (
 		<Layout name={'Department'}>
-			<div
-				className='title'
-				data-aos='fade-right'
-				data-aos-duration='1000'
-				data-aos-offset='400'>
+			<div className='title'>
 				<h1>CEO's DESK</h1>
 			</div>
 			<section className='intro'>
 				<div className='wrap'>
-					<div
-						className='left'
-						data-aos='fade-right'
-						data-aos-duration='1000'
-						data-aos-offset='300'>
+					<div className='left'>
 						<img src={`${path}/img/ceo.jpg`} alt='' />
 					</div>
-					<div
-						className='right'
-						data-aos='fade-left'
-						data-aos-duration='1000'
-						data-aos-offset='300'>
+					<div className='right'>
 						<h2>WELCOME TO THE BEST UNIVERSE in the world</h2>
 						<p>
 							&nbsp;The Chief Electoral Office functions under the overall
@@ -84,11 +72,7 @@ function Department() {
 					);
 				})}
 			</ul>
-			<div
-				className='contact'
-				data-aos='flip-down'
-				data-aos-duration='1000'
-				data-aos-offset='400'>
+			<div className='contact'>
 				<div className='warp'>
 					<h1>JOIN OUR NEWSLETTER</h1>
 					<p>Class aptent taciti sociosqu ad litora torquent per</p>
