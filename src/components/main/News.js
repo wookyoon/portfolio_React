@@ -38,7 +38,7 @@ function News() {
 		AOS.init();
 	});
 	return (
-		<section id='news'>
+		<section id='news' className='myScroll on'>
 			<div className='wrpper'>
 				<h1
 					id='title'
@@ -64,7 +64,7 @@ function News() {
 				<img
 					data-aos='fade-up'
 					data-aos-duration='1000'
-					data-aos-offset='300'
+					data-aos-offset='200'
 					src={`${path}/img/auto1.png`}
 					alt=''
 				/>
@@ -72,7 +72,7 @@ function News() {
 					href='#'
 					data-aos='zoom-in'
 					data-aos-duration='1000'
-					data-aos-offset='200'>
+					data-aos-offset='100'>
 					VIEW MORE
 				</a>
 			</div>
@@ -85,7 +85,7 @@ function News() {
 				<div
 					className='pic'
 					data-aos='flip-right'
-					data-aos-duration='1000'
+					data-aos-duration='1500'
 					data-aos-offset='300'>
 					{/* <img src={`${path}/img/j1.jpg`} alt='' /> */}
 					<Swiper

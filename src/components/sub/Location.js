@@ -114,7 +114,7 @@ function Location() {
 	}, [traffic]);
 
 	return (
-		<Layout name={'Location'}>
+		<Layout name={'Location'} img={'pic5.jpg'}>
 			<div className='title'>
 				<h1>GET IN TOUCH</h1>
 				<p>

@@ -15,7 +15,7 @@ function Youtube() {
 	});
 	return (
 		<>
-			<Layout name={'Youtube'}>
+			<Layout name={'Youtube'} img={'pic3.jpg'}>
 				<div className='title'>
 					<h1>EXCULSIVE VIDEO</h1>
 					<p>

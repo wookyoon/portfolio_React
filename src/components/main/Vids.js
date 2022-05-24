@@ -6,6 +6,11 @@ import 'aos/dist/aos.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/css';
+
+import { Autoplay } from 'swiper';
 
 library.add(fab);
 
@@ -58,9 +63,29 @@ function Vids() {
 					<div
 						className='pic'
 						data-aos='fade-right'
-						data-aos-duration='1000'
+						data-aos-duration='1500'
 						data-aos-offset='300'>
-						<img src={`${path}/img/main6.jpg`} alt='' />
+						<Swiper
+							slidesPerView={1}
+							spaceBetween={30}
+							centeredSlides={true}
+							autoplay={{
+								delay: 1000,
+								disableOnInteraction: false,
+							}}
+							loop={true}
+							modules={[Autoplay]}
+							className='mySwiper'>
+							<SwiperSlide>
+								<img src={`${path}/img/main6.jpg`} alt='' />
+							</SwiperSlide>
+							<SwiperSlide>
+								<img src={`${path}/img/q4.jpg`} alt='' />
+							</SwiperSlide>
+							<SwiperSlide>
+								<img src={`${path}/img/q5.jpg`} alt='' />
+							</SwiperSlide>
+						</Swiper>
 					</div>
 					<div
 						className='content'

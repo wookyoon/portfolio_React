@@ -19,7 +19,7 @@ function Department() {
 		AOS.init();
 	});
 	return (
-		<Layout name={'Department'}>
+		<Layout name={'Department'} img={'pic1.jpg'}>
 			<div className='title'>
 				<h1>CEO's DESK</h1>
 			</div>

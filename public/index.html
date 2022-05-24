@@ -7,11 +7,120 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f808b4103453fcd3e0285ef85c52b8de"></script>
   <title>React App</title>
+  <style>
+    .default {
+      position: absolute;
+      top: -99999px;
+    }
+
+    .mask {
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      z-index: 10;
+      transition: opacity 2s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font: 40px/1 'koulen';
+      color: #c9ab81;
+      background: #111;
+    }
+
+    .mask.off {
+      opacity: 0;
+    }
+  </style>
 </head>
 
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
+
+  <div class="default"></div>
+  <div class="mask">Loading...</div>
+
+  <script>
+    const imgs = [
+      'http://wookyoon.github.io/react_portfolio_WK/img/pic1.jpg',
+      'http://wookyoon.github.io/react_portfolio_WK/img/pic2.jpg',
+      'http://wookyoon.github.io/react_portfolio_WK/img/pic3.jpg',
+      'http://wookyoon.github.io/react_portfolio_WK/img/pic4.jpg',
+      'http://wookyoon.github.io/react_portfolio_WK/img/pic5.jpg',
+      'http://wookyoon.github.io/react_portfolio_WK/img/pic6.jpg',
+    ];
+    const vids = [
+      'http://wookyoon.github.io/react_portfolio_WK/img/vid1.mp4',
+      'http://wookyoon.github.io/react_portfolio_WK/img/vid2.mp4',
+      'http://wookyoon.github.io/react_portfolio_WK/img/vid3.mp4',
+    ];
+    let loadedImg = false;
+    const lenImg = imgs.length;
+    const lenVid = vids.length;
+    const defaults = document.querySelector('.default');
+    const mask = document.querySelector('.mask');
+    tags = '';
+
+    createDOM();
+
+    //동적으로 만들어진 img, vid dom의 이미지, 영상 소스가 모두 로딩완료되서 
+    //두함수 모두 promise객체를 리턴하면 동기적으로 then구문 실행
+    Promise.all([loadImg(), loadVid()]).then((result) => {
+      console.log(result);
+
+      if (result) {
+        mask.classList.add('off');
+        setTimeout(() => {
+          mask.remove();
+          defaults.remove();
+        }, 2000);
+      }
+    });
+
+    function createDOM() {
+      imgs.forEach(src => {
+        tags += `<img src=${src} />`
+      })
+      vids.forEach(src => {
+        tags += `<video src=${src}></video>`;
+      })
+      defaults.innerHTML = tags;
+    }
+
+    function loadImg() {
+      return new Promise((res, rej) => {
+        const imgDOM = defaults.querySelectorAll('img');
+        let countImg = 0;
+
+        imgDOM.forEach((img) => {
+          img.onload = () => {
+            countImg++;
+            if (lenImg === countImg) {
+              res(true);
+            }
+          }
+        })
+      })
+    }
+
+    function loadVid() {
+      return new Promise((res, rej) => {
+        const vidDOM = defaults.querySelectorAll('video');
+        let countVid = 0;
+
+        vidDOM.forEach((vid) => {
+          vid.onloadeddata = () => {
+            countVid++;
+            if (countVid === lenVid) {
+              res(true);
+            }
+          }
+        })
+      })
+    }
+  </script>
 </body>
 
 </html>

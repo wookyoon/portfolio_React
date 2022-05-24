@@ -106,7 +106,7 @@ function Join() {
 	}, [success]);
 
 	return (
-		<Layout name={'Join'}>
+		<Layout name={'Join'} img={'pic6.jpg'}>
 			{success ? <h2>회원가입을 축하합니다.</h2> : null}
 
 			<div className='title'>
@@ -120,7 +120,7 @@ function Join() {
 			</div>
 
 			<div className='video'>
-				<video src={`${path}/img/vid5.mp4`} loop autoPlay muted></video>
+				<video src={`${path}/img/vid3.mp4`} loop autoPlay muted></video>
 				<h2>Being The Member</h2>
 			</div>
 			<div className='wrap'>

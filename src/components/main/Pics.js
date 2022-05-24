@@ -25,7 +25,7 @@ function Pics() {
 							return (
 								<li
 									data-aos='flip-right'
-									data-aos-duration='1000'
+									data-aos-duration='1500'
 									data-aos-offset='300'
 									key={idx}
 									onClick={() => {

@@ -63,7 +63,7 @@ function Gallery() {
 
 	return (
 		<>
-			<Layout name={'Gallery'}>
+			<Layout name={'Gallery'} img={'pic2.jpg'}>
 				<div className='intro'>
 					<h1>THROW BACK</h1>
 					<p>

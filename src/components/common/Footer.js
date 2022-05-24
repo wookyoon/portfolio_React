@@ -8,7 +8,7 @@ function Footer() {
 	return (
 		<footer>
 			<div className='vid'>
-				<video src={`${path}/img/vid4.mp4`} loop autoPlay muted></video>
+				<video src={`${path}/img/vid1.mp4`} loop autoPlay muted></video>
 				<h2>Get Your Style Now</h2>
 				<a href='#'>view more</a>
 			</div>

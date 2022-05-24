@@ -99,7 +99,7 @@ function Community() {
 		AOS.init();
 	});
 	return (
-		<Layout name={'Community'}>
+		<Layout name={'Community'} img={'pic4.jpg'}>
 			<div className='title'>
 				<h1>AUDIENCE OPINION</h1>
 				<p>
