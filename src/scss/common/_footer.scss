@@ -31,18 +31,19 @@ footer {
 			display: inline-block;
 			position: absolute;
 			width: 100px;
-			height: 30px;
-			font: 20px/1.2 'oswald';
-			color: #ae8854;
-			border: 1px solid #ae8854;
-			background-color: rgba(0, 0, 0, 0.5);
-
+			height: 36px;
+			background-color: #daa964;
+			border: 1px solid #daa964;
+			font: 18px/1.8 'oswald';
+			color: #000;
+			transition: 0.5s;
 			bottom: 20%;
 			left: 50%;
 			transform: translateX(-50%);
 		}
 		a:hover {
-			text-shadow: 1px 1px 3px #ae8854;
+			color: #daa964;
+			background-color: rgba(0, 0, 0, 0.5);
 		}
 	}
 

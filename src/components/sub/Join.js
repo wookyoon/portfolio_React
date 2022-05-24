@@ -154,7 +154,7 @@ function Join() {
 											type='text'
 											id='userid'
 											name='userid'
-											placeholder=' Input Your ID'
+											placeholder=' input ID'
 											value={val.userid}
 											onChange={handleChange}
 										/>
@@ -171,7 +171,7 @@ function Join() {
 											type='password'
 											name='pwd1'
 											id='pwd1'
-											placeholder=' Input Your Password'
+											placeholder=' input password'
 											value={val.pwd1}
 											onChange={handleChange}
 										/>
@@ -188,7 +188,7 @@ function Join() {
 											type='password'
 											name='pwd2'
 											id='pwd2'
-											placeholder=' Reinput Your Password'
+											placeholder=' re-input password'
 											value={val.pwd2}
 											onChange={handleChange}
 										/>
@@ -205,7 +205,7 @@ function Join() {
 											type='text'
 											id='email'
 											name='email'
-											placeholder=' Input Your Email'
+											placeholder=' input your email'
 											value={val.email}
 											onChange={handleChange}
 										/>
@@ -269,7 +269,7 @@ function Join() {
 									</th>
 									<td>
 										<select name='edu' id='eud' onChange={handleSelect}>
-											<option value=''>Select Education</option>
+											<option value=''>select education</option>
 											<option value='elementary-school'>초등학교 졸업</option>
 											<option value='middle-school'>중학교 졸업</option>
 											<option value='high-school'>고등학교 졸업</option>

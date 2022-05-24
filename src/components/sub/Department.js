@@ -47,7 +47,7 @@ function Department() {
 				className='summary'
 				data-aos='fade-up'
 				data-aos-duration='1000'
-				data-aos-offset='500'>
+				data-aos-offset='600'>
 				<h1>OUR EXPERTS</h1>
 				<p>
 					Suspendisse rutrum nibh urna, nec sodales enim sollicitudin sed.

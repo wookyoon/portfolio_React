@@ -18,7 +18,7 @@
 		align-items: center;
 		cursor: pointer;
 		width: 400px;
-		margin-bottom: 100px;
+		margin-bottom: 150px;
 		img {
 			width: 100%;
 			object-fit: cover;
@@ -61,6 +61,7 @@
 		justify-content: space-evenly;
 		.pic {
 			width: 500px;
+			filter: grayscale(0.7);
 			img {
 				width: 100%;
 				object-fit: cover;

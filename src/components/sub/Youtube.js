@@ -44,7 +44,12 @@ function Youtube() {
 								data-aos-offset='500'>
 								<img src={vid.snippet.thumbnails.standard.url} />
 							</div>
-							<h2>{tit.length > 33 ? tit.substr(0, 33) + '...' : tit}</h2>
+							<h2
+								data-aos='fade-left'
+								data-aos-duration='1000'
+								data-aos-offset='500'>
+								{tit.length > 33 ? tit.substr(0, 33) + '...' : tit}
+							</h2>
 							<p>{desc.length > 141 ? desc.substr(0, 141) + '...' : desc}</p>
 							<span>{date.split('T')[0]}</span>
 						</article>

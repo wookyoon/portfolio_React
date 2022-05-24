@@ -45,7 +45,7 @@ function Pics() {
 					href='#'
 					data-aos='zoom-in'
 					data-aos-duration='1000'
-					data-aos-offset='300'>
+					data-aos-offset='100'>
 					VIEW MORE
 				</a>
 			</section>

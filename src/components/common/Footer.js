@@ -10,7 +10,7 @@ function Footer() {
 			<div className='vid'>
 				<video src={`${path}/img/vid1.mp4`} loop autoPlay muted></video>
 				<h2>Get Your Style Now</h2>
-				<a href='#'>view more</a>
+				<a href='#'>VIEW MORE</a>
 			</div>
 
 			<Swiper
