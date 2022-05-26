@@ -1,0 +1,26 @@
+nav {
+	width: 280px;
+	height: 100vh;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background: rgba(0, 0, 0, 0.9);
+	z-index: 5;
+	padding: 50px;
+
+	h1 {
+		margin-bottom: 30px;
+		a {
+			font: bold 38px/1 'Libre Bodoni';
+		}
+	}
+
+	a {
+		font-size: 26px;
+		font-family: oswald;
+		color: #999;
+	}
+	:hover {
+		color: #d5a869;
+	}
+}

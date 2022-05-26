@@ -45,6 +45,10 @@ header {
 		}
 	}
 	&.main {
+		// background: transparent;
+		position: absolute;
+		top: 0px;
+		left: 0px;
 		z-index: 2;
 	}
 }
@@ -59,15 +63,17 @@ header {
 				left: 30px;
 			}
 			#gnb {
-				display: block;
+				display: none;
 			}
 			.menuMo {
 				display: block;
+				color: #999;
+				font-size: 36px;
+				transition: 0.5s;
+			}
+			.menuMo:hover {
+				color: #d5a869;
 			}
 		}
 	}
-}
-
-//m.p
-@media screen and (max-width: $mp) {
 }
