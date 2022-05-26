@@ -24,7 +24,11 @@ function Visual() {
 				<h2 data-aos='fade-left' data-aos-duration='3000' data-aos-delay='3000'>
 					TWO FOR TWO
 				</h2>
-				<h3 data-aos='fade-up' data-aos-duration='3000' data-aos-delay='3000'>
+				<h3
+					data-aos='fade-up'
+					data-aos-duration='3000'
+					data-aos-delay='3000'
+					data-aos-offset='-100'>
 					made by gentleman
 				</h3>
 			</div>

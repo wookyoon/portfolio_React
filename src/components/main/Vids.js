@@ -55,7 +55,7 @@ function Vids() {
 					href='#'
 					data-aos='zoom-in'
 					data-aos-duration='1000'
-					data-aos-offset='100'>
+					data-aos-offset='0'>
 					VIEW MORE
 				</a>
 

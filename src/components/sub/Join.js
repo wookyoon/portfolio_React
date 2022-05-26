@@ -125,11 +125,11 @@ function Join() {
 			</div>
 			<div className='wrap'>
 				<div className='contact'>
-					<div className='warp'>
-						<div>
+					<div className='warpper'>
+						<img src={`${path}/img/w3.jpg`} alt='' />
+						<div className='box'>
 							<h1>JOIN OUR NEWSLETTER</h1>
 							<p>Class aptent taciti sociosqu ad litora torquent per</p>
-
 							<input id='email' type='text' placeholder='Email' name='email' />
 							<button>
 								<a href='#'>SUBSCRIBE NOW</a>
