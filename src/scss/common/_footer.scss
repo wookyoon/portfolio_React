@@ -109,17 +109,6 @@ footer {
 				color: #c9ab81;
 				margin-bottom: 20px;
 			}
-			ul {
-				display: flex;
-				justify-content: flex-start;
-				li {
-					font-size: 16px;
-					margin-right: 20px;
-					a {
-						color: #fff;
-					}
-				}
-			}
 		}
 		.middle_0 {
 			h6 {
@@ -208,8 +197,141 @@ footer {
 //tablet
 @media screen and (max-width: $tablet) {
 	footer {
+		.vid {
+			h2 {
+				font: 40px/1 'koulen';
+			}
+		}
 		.inner {
-			width: 100%;
+			.left {
+				h2 {
+					font: 40px 'Libre Bodoni';
+
+					&::after {
+						width: 140px;
+					}
+				}
+				p {
+					font: bold 14px/2 'lato';
+				}
+			}
+			.middle_0 {
+				h6 {
+					font: 16px 'lato';
+
+					&::after {
+						width: 100px;
+					}
+				}
+				ul {
+					li {
+						font: bold 15px/2 'lato';
+					}
+				}
+			}
+			.middle {
+				h6 {
+					font: 16px 'lato';
+
+					&::after {
+						width: 75px;
+					}
+				}
+				ul {
+					li {
+						font: bold 15px/2 'lato';
+					}
+				}
+			}
+			.right {
+				h6 {
+					font: 16px 'lato';
+
+					&::after {
+						width: 100px;
+					}
+				}
+				ul {
+					li {
+						font: bold 15px/2 'lato';
+
+						span {
+							font-size: 14px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+//m.p
+@media screen and (max-width: $mp) {
+	footer {
+		.vid {
+			h2 {
+				font: 25px/1 'koulen';
+			}
+		}
+		.inner {
+			.left {
+				h2 {
+					font: 30px 'Libre Bodoni';
+
+					&::after {
+						width: 105px;
+					}
+				}
+				p {
+					font: bold 10px/2 'lato';
+				}
+			}
+			.middle_0 {
+				h6 {
+					font: 14px 'lato';
+
+					&::after {
+						width: 82px;
+					}
+				}
+				ul {
+					li {
+						font: bold 10px/2 'lato';
+					}
+				}
+			}
+			.middle {
+				h6 {
+					font: 14px 'lato';
+
+					&::after {
+						width: 64px;
+					}
+				}
+				ul {
+					li {
+						font: bold 10px/2 'lato';
+					}
+				}
+			}
+			.right {
+				h6 {
+					font: 14px 'lato';
+
+					&::after {
+						width: 83px;
+					}
+				}
+				ul {
+					li {
+						font: bold 10px/2 'lato';
+
+						span {
+							font-size: 10px;
+						}
+					}
+				}
+			}
 		}
 	}
 }

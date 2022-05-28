@@ -55,28 +55,6 @@ function Footer() {
 						<br />
 						design in minimal style.
 					</p>
-					<ul>
-						<li>
-							<a href='#'>
-								<i class='fa-brands fa-youtube'></i>
-							</a>
-						</li>
-						<li>
-							<a href='#'>
-								<i class='fa-brands fa-instagram' id='insta'></i>
-							</a>
-						</li>
-						<li>
-							<a href='#'>
-								<i class='fa-brands fab fa-facebook'></i>
-							</a>
-						</li>
-						<li>
-							<a href='#'>
-								<i class='fa-brands fab fa-twitter'></i>
-							</a>
-						</li>
-					</ul>
 				</div>
 				<div className='middle_0'>
 					<h6>NAVIGATION</h6>
@@ -97,8 +75,9 @@ function Footer() {
 					<h6>CONTACT</h6>
 					<ul>
 						<li>
-							14 Tottenham Courtten Road, London,
-							<br /> England.
+							14 Tottenham Courtten Road,
+							<br />
+							London, England.
 						</li>
 						<li>info@zooka.com</li>
 						<li>T / (102) 6666 8888</li>

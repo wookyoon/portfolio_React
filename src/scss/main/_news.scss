@@ -146,3 +146,87 @@
 		}
 	}
 }
+
+//tablet
+@media screen and (max-width: $tablet) {
+	#news {
+		.wrpper {
+			#title {
+				font: 40px/1 'lato';
+			}
+			h2 {
+				font: 16px/1 'lato';
+			}
+			p {
+				font: 16px/2 'oswald';
+			}
+		}
+
+		h1 {
+			font: 40px/1 'lato';
+		}
+
+		.wrap {
+			.pic {
+				width: 400px;
+			}
+
+			div {
+				width: 400px;
+
+				li {
+					height: 66px;
+
+					h2 {
+						font: 16px/0.6 'lato';
+					}
+					p {
+						font: 16px/0.7 'oswald';
+					}
+				}
+			}
+		}
+	}
+}
+
+//m.p
+@media screen and (max-width: $mp) {
+	#news {
+		.wrpper {
+			#title {
+				font: 30px/1 'lato';
+			}
+			h2 {
+				font: 14px/1 'lato';
+			}
+			p {
+				font: 14px/2 'oswald';
+			}
+		}
+
+		h1 {
+			font: 30px/1 'lato';
+		}
+
+		.wrap {
+			.pic {
+				width: 200px;
+			}
+
+			div {
+				width: 200px;
+
+				li {
+					height: 33px;
+
+					h2 {
+						font: 16px/0.5 'lato';
+					}
+					p {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,102 +1,120 @@
-.content {
+body {
 	background-color: #000;
-
-	figure {
-		width: 100%;
-		height: 400px;
-		background: #000;
-		opacity: 0;
-		transition: 1s;
-
-		position: relative;
-
-		img {
+	.content {
+		figure {
 			width: 100%;
-			height: 100%;
-			object-fit: cover;
+			height: 400px;
+			background: #000;
+			opacity: 0;
+			transition: 1s;
+
+			position: relative;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				filter: grayscale(0.7);
+			}
+			#subTitle {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				text-align: center;
+				h1 {
+					font: 60px/1 'Koulen';
+					letter-spacing: 15px;
+					text-shadow: 2px 2px 5px #000;
+					color: #d5a869;
+					margin-bottom: 20px;
+				}
+				p {
+					font: 20px/1 'Radio Canada';
+					text-shadow: 1px 1px #000;
+					color: #d5a869;
+				}
+			}
+		}
+		figure::before {
+			content: '';
+			opacity: 0.4;
 			position: absolute;
 			top: 0px;
 			left: 0px;
-			filter: grayscale(0.7);
+			right: 0px;
+			bottom: 0px;
+			background-color: #000;
 		}
-		#subTitle {
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			text-align: center;
+
+		> .inner {
+			width: 1180px;
+			min-height: 400px;
+			margin: 0 auto;
+			margin-top: 200px;
+			padding-bottom: 100px;
+			position: relative;
+			opacity: 0;
+			transform: translateY(100px);
+			transition: 1s;
+			background-color: #000;
+
 			h1 {
-				font: 60px/1 'Koulen';
-				letter-spacing: 15px;
-				text-shadow: 2px 2px 5px #000;
-				color: #d5a869;
-				margin-bottom: 20px;
-			}
-			p {
-				font: 20px/1 'Radio Canada';
-				text-shadow: 1px 1px #000;
-				color: #d5a869;
+				font: normal 30px/1 'arial';
+				color: #777;
+				margin-bottom: 50px;
 			}
 		}
-	}
-	figure::before {
-		content: '';
-		opacity: 0.4;
-		position: absolute;
-		top: 0px;
-		left: 0px;
-		right: 0px;
-		bottom: 0px;
-		background-color: #000;
+		&.on {
+			figure {
+				opacity: 1;
+			}
+			> .inner {
+				opacity: 1;
+				transform: translateY(0px);
+			}
+		}
 	}
 
-	> .inner {
-		width: 1180px;
-		min-height: 400px;
-		margin: 0 auto;
-		margin-top: 200px;
-		padding-bottom: 100px;
-		position: relative;
-		opacity: 0;
-		transform: translateY(100px);
-		transition: 1s;
-
-		h1 {
-			font: normal 30px/1 'arial';
-			color: #777;
-			margin-bottom: 50px;
+	//tablet
+	@media screen and (max-width: $tablet) {
+		.content {
+			figure {
+				height: 200px;
+				#subTitle {
+					h1 {
+						font: 40px/1 'Koulen';
+					}
+					p {
+						font: 16px/1 'Radio Canada';
+					}
+				}
+			}
+			> .inner {
+				width: 100%;
+				margin: 80px auto;
+				padding: 0px 30px;
+			}
 		}
 	}
-	&.on {
-		figure {
-			opacity: 1;
-		}
-		> .inner {
-			opacity: 1;
-			transform: translateY(0px);
-		}
-	}
-}
 
-//tablet
-@media screen and (max-width: $tablet) {
-	.content {
-		figure {
-			height: 200px;
-		}
-		> .inner {
-			width: 100%;
-			margin: 80px auto;
-			padding: 0px 30px;
-		}
-	}
-}
-
-//m.p
-@media screen and (max-width: $mp) {
-	.content {
-		figure {
-			height: 150px;
+	//m.p
+	@media screen and (max-width: $mp) {
+		.content {
+			figure {
+				height: 150px;
+				#subTitle {
+					h1 {
+						font: 30px/1 'Koulen';
+					}
+					p {
+						font: 12px/1 'Radio Canada';
+					}
+				}
+			}
 		}
 	}
 }

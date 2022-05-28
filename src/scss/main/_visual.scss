@@ -51,3 +51,41 @@ main {
 		}
 	}
 }
+
+//tablet
+@media screen and (max-width: $tablet) {
+	main {
+		figure {
+			.wrap {
+				h1 {
+					font-size: 30px;
+				}
+				h2 {
+					font-size: 60px;
+				}
+				h3 {
+					font-size: 30px;
+				}
+			}
+		}
+	}
+}
+
+//m.p
+@media screen and (max-width: $mp) {
+	main {
+		figure {
+			.wrap {
+				h1 {
+					font-size: 20px;
+				}
+				h2 {
+					font-size: 50px;
+				}
+				h3 {
+					font-size: 20px;
+				}
+			}
+		}
+	}
+}

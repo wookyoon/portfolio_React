@@ -154,3 +154,89 @@
 		}
 	}
 }
+
+//tablet
+@media screen and (max-width: $tablet) {
+	#vids {
+		h1 {
+			font: 40px/1 'lato';
+		}
+		ul li {
+			width: 350px;
+
+			h2 {
+				font: 20px/1.3 'oswald';
+				color: #c9ab81;
+			}
+		}
+
+		.wrapper {
+			.pic {
+				width: 400px;
+			}
+		}
+		.content {
+			h1 {
+				font: 20px/1 'lato';
+			}
+			p {
+				font: 15px/2 'oswald';
+			}
+		}
+
+		.fon {
+			h2 {
+				font: 40px/1.3 'oswald';
+			}
+			#tit {
+				font: 30px/1.3 'oswald';
+			}
+			p {
+				font: 16px/1.5 'oswald';
+			}
+		}
+	}
+}
+
+//m.p
+@media screen and (max-width: $mp) {
+	#vids {
+		h1 {
+			font: 30px/1 'lato';
+		}
+		ul li {
+			width: 300px;
+
+			h2 {
+				font: 16px/1.3 'oswald';
+				color: #c9ab81;
+			}
+		}
+
+		.wrapper {
+			.pic {
+				display: none;
+			}
+		}
+		.content {
+			h1 {
+				font: 18px/1 'lato';
+			}
+			p {
+				font: 14px/2 'oswald';
+			}
+		}
+
+		.fon {
+			h2 {
+				font: 30px/1.3 'oswald';
+			}
+			#tit {
+				font: 20px/1.3 'oswald';
+			}
+			p {
+				font: 14px/1.5 'oswald';
+			}
+		}
+	}
+}
